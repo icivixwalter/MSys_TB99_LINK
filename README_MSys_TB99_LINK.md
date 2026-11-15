@@ -1,11 +1,21 @@
 # MSys_TB99_LINK_BASE
    progetto base per i mini progetti
-   codice ----> $Msys$DF00.01_(la base  di tutti i progetti per i salvataggi ed il Progetto)
+   codice ----> $Msys$TB99.01_(la base  di tutti i progetti per i salvataggi ed il Progetto)
+
+
+
+## ATTIVITA
+con il progetto Tb99 link concentro in esso tutte le tabelle collegate con gli altri
+progetti in un unico posto e vengono salvate nella tabella 
+    Msys_TB99_LINK
+Questa tabella contiene il nome delle tabelle link il tipo e dove sono salvate.
+Dalla tabella link si deve risalire al database e recuperare tutti gli oggetti da
+utilizzare per la tabella che possono essere esportati in altri micro progetti.
 
 
 
 
-CHATGPT
+## CHATGPT
 
    SEGNALIBRI
       TI POSSO DARE LA CLASSE della form gestione oggetti per un 

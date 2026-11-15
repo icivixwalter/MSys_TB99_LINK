@@ -597,3 +597,148 @@ C:/CASA/LINGUAGGI/ACCESS/PROGETTI_MDB/MSYS/MSys_TB99_LINK
 
 === 2a) ADD di tutte le modifiche   [ 8:39:11]
     COMANDO: git add -A
+warning: in the working copy of 'Project_MSys_TB99_LINK.sublime-workspace', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'git_LOG.txt', LF will be replaced by CRLF the next time Git touches it
+    ESITO: OK
+
+=== 2b) COMMIT   [ 8:39:11]
+    COMANDO: git commit -m "2026_11_15_H08_M39_S10_aggiornamento_MSYS"
+[main c97255d] 2026_11_15_H08_M39_S10_aggiornamento_MSYS
+ 64 files changed, 19653 insertions(+)
+ create mode 100644 AA_SALVATAGGI/2026_11_15_ZIP_SALVATAGGI_MSys_TB99_LINK.GE614
+ create mode 100644 AA_SALVATAGGI/2026_11_15_ZIP_SALVATAGGI_MSys_TB99_LINK_LISTA.TXT
+ create mode 100644 AA__________________________________________________________________________AA.txt
+ create mode 100644 HELP/Msys_GEFILE_FrmM01_GE_SERVIZI_TB99_LINK/HELP_FrmM01_GE_SERVIZI_TB99_LINK.html
+ create mode 100644 HELP/Msys_GEFILE_FrmM01_GE_SERVIZI_TB99_LINK/TABELLE_COLLEGATE.pdf
+ create mode 100644 LOGS/20260607_160625_TB99_Link_Rebuild_Log.txt
+ create mode 100644 LOGS/20260607_161512_TB99_Link_Rebuild_Log.txt
+ create mode 100644 LOGS/20260607_183325_DELETE_LINKS_TB99_Link_Rebuild_Log.txt
+ create mode 100644 LOGS/20260607_183821_DELETE_LINKS_TB99_Link_Rebuild_Log.txt
+ create mode 100644 LOGS/20260607_184051_DELETE_LINKS_TB99_Link_Rebuild_Log.txt
+ create mode 100644 LOGS/20260607_190955_DELETE_LINKS_TB99_Link_Rebuild_Log.txt
+ create mode 100644 LOGS/20260607_191004_TB99_Link_Rebuild_Log.txt
+ create mode 100644 LOGS/20260607_191041_DELETE_LINKS_TB99_Link_Rebuild_Log.txt
+ create mode 100644 LOGS/20260607_191048_TB99_Link_Rebuild_Log.txt
+ create mode 100644 MDB/LOGS/20260728_181149_TB99_Link_Rebuild_Log.txt
+ create mode 100644 MDB/LOGS/20260728_181645_TB99_Link_Rebuild_Log.txt
+ create mode 100644 MDB/LOGS/IMPORTA_NOMI_LOG_20260614_174133.txt
+ create mode 100644 MDB/LOGS/IMPORTA_NOMI_LOG_20260614_174155.txt
+ create mode 100644 MDB/LOGS/IMPORTA_NOMI_LOG_20260614_174730.txt
+ create mode 100644 MDB/LOGS/IMPORTA_NOMI_LOG_20260614_174949.txt
+ create mode 100644 MDB/LOGS/IMPORTA_NOMI_LOG_20260614_175854.txt
+ create mode 100644 MDB/LOGS/IMPORTA_NOMI_LOG_20260614_180228.txt
+ create mode 100644 MDB/LOGS/IMPORTA_NOMI_LOG_20260614_180310.txt
+ create mode 100644 MDB/LOGS/IMPORTA_NOMI_LOG_20260614_180451.txt
+ create mode 100644 MDB/LOGS/IMPORTA_NOMI_LOG_20260614_181527.txt
+ create mode 100644 MDB/LOGS/IMPORTA_NOMI_LOG_20260614_184450.txt
+ create mode 100644 MDB/LOGS/IMPORTA_NOMI_LOG_20260614_184551.txt
+ create mode 100644 MDB/LOGS/IMPORTA_NOMI_LOG_20260614_185031.txt
+ create mode 100644 MDB/LOGS/LogErrori.txt
+ create mode 100644 MDB/LOGS/LogEventi.txt
+ create mode 100644 MDB/LOGS/LogInfo.txt
+ create mode 100644 MDB/MSys_TB99_LINK.mdb
+ create mode 100644 MSYS_N02________________________________________________________________MSYS.txt
+ create mode 100644 OBJECT/MODULES/Msys_TB99_LINK_ Mdl01_RICOSTRUICI_LINK_TABELLE.bas
+ create mode 100644 OBJECT/QUERYES/QUERY_TB99_INSERT/Msys_TB99_LINK_Qry99_70_INSERT_ArchivioTabelleLINK.MD
+ create mode 100644 OBJECT/QUERYES/QUERY_TB99_SELECT/Msys_TB99_LINK_Qry99_01_SELECT_Archivio.MD
+ create mode 100644 OBJECT/QUERYES/QUERY_TB99_SELECT/Msys_TB99_LINK_Qry99_01_SELECT_BackUp.md
+ create mode 100644 OBJECT/QUERYES/QUERY_TB99_SELECT/Msys_TB99_LINK_Qry99_01_SELECT_BckUp.md
+ create mode 100644 OBJECT/TABLES/Msys_TB99_LINK.MD
+ create mode 100644 Project_MSys_TB99_LINK.sublime-project
+ create mode 100644 Project_MSys_TB99_LINK.sublime-workspace
+ create mode 100644 README_MSys_TB99_LINK.md
+ create mode 100644 ZIP_7ZIP_INCREMENTALE_FILE_LOG.TXT
+ create mode 100644 ZIP_7ZIP_INCREMENTALE_{CRIPTA+DECODIFICA_INTERNO}.BAT
+ create mode 100644 ZIP_7ZIP_________________________________________________________________ZZ.txt
+ create mode 100644 ZZ________________________________________________________________________ZZ.txt
+ create mode 100644 Zip_N70_CREA_ElencoFile.bat
+ create mode 100644 Zip_N70_CRIPTA.bat
+ create mode 100644 Zip_N70_DECODIFICA.bat
+ create mode 100644 Zip_N70_ElencoFile.txt
+ create mode 100644 Zip_N70_ElencoFileESCLUSI.txt
+ create mode 100644 Zip_N70____________________________________________CRIPTA_DECODIFICA.txt
+ create mode 100644 git_CANCELLA_TUTTI_I_DATI_IN_GITHUB.BAT
+ create mode 100644 git_COMMIT.BAT
+ create mode 100644 git_CREATE_GITHUB.BAT
+ create mode 100644 git_CREA_SALVATAGGIO.BAT
+ create mode 100644 git_LOG.txt
+ create mode 100644 git_OPEN_OVERLEAF.BAT
+ create mode 100644 git_OpenGitHub.bat
+ create mode 100644 git_PULL.BAT
+ create mode 100644 git_PUSH.BAT
+ create mode 100644 git_RICOSTRUISCI_GITHUB.BAT
+ create mode 100644 git_STATUS+PULL+ADD+COMMIT+PUSH.BAT
+ create mode 100644 git_STATUS.BAT
+    ESITO: OK
+
+=== 2c) CONTROLLO MAIN SVUOTATO su GitHub   [ 8:39:11]
+    COMANDO: git fetch origin
+    ESITO: OK
+
+=== 3) PULL da GitHub   [ 8:39:12]
+    COMANDO: git pull --no-edit
+Already up to date.
+    ESITO: OK
+
+=== 4) PUSH su GitHub   [ 8:39:13]
+    COMANDO: git push
+To https://github.com/icivixwalter/MSys_TB99_LINK.git
+   5692a03..c97255d  main -> main
+    ESITO: OK
+
+=== 5) STATO FINALE   [ 8:39:18]
+    COMANDO: git status -sb
+## main...origin/main
+ M git_LOG.txt
+    ESITO: OK
+
+################################################################
+### ESITO FINALE: TUTTO OK - repository allineato con GitHub
+### FINE  15/11/2026   8:39:19
+################################################################
+
+################################################################
+### INIZIO  15/11/2026  22:25:55
+### PC: HPGIACOMO   UTENTE: giaco
+### REPOSITORY: C:\CASA\LINGUAGGI\ACCESS\PROGETTI_MDB\MSYS\MSys_TB99_LINK
+################################################################
+
+=== 0) CONTROLLO REPOSITORY   [22:25:55]
+    COMANDO: git rev-parse --show-toplevel
+C:/CASA/LINGUAGGI/ACCESS/PROGETTI_MDB/MSYS/MSys_TB99_LINK
+    ESITO: OK
+
+=== 1) STATUS   [22:25:55]
+    COMANDO: git status -s
+ M MDB/MSys_TB99_LINK.mdb
+ M "OBJECT/MODULES/Msys_TB99_LINK_ Mdl01_RICOSTRUICI_LINK_TABELLE.bas"
+ M README_MSys_TB99_LINK.md
+ M git_LOG.txt
+?? MASTER_PLAN/
+?? MDB/BACKUP_CLAUDE_2026_11_15_08_42_28_RELINK/
+?? MDB/BACKUP_CLAUDE_2026_11_15_08_54_13_SOLO_MSYS/
+?? MDB/BACKUP_CLAUDE_2026_11_15_09_01_20_MDL05/
+?? MDB/BACKUP_CLAUDE_2026_11_15_19_50_21_MENU_TB06/
+?? MDB/BACKUP_CLAUDE_2026_11_15_21_03_23_RISTRUTTURA/
+?? MDB/BACKUP_CLAUDE_2026_11_15_21_43_28_CATENA/
+?? MDB/BACKUP_CLAUDE_2026_11_15_21_46_26_PRIMA_PROVE/
+?? MDB/BACKUP_CLAUDE_2026_11_15_22_14_41_OGGETTI_SORGENTE/
+?? MDB/LOGS/20261115_090352_TB99_Invio_Link_FrontEnd_Log.txt
+?? MDB/LOGS/20261115_090353_TB99_Invio_Link_FrontEnd_Log.txt
+?? MDB/LOGS/20261115_090355_TB99_Invio_Link_FrontEnd_Log.txt
+?? MDB/LOGS/20261115_090429_TB99_Invio_Link_FrontEnd_Log.txt
+?? MDB/LOGS/20261115_090448_TB99_Invio_Link_FrontEnd_Log.txt
+?? MDB/LOGS/20261115_210954_TB99_Invio_Link_FrontEnd_Log.txt
+?? MDB/LOGS/20261115_214628_TB99_Invio_Link_FrontEnd_Log.txt
+?? MDB/LOGS/20261115_215242_TB99_Invio_Link_FrontEnd_Log.txt
+?? MDB/LOGS/20261115_215302_TB99_Invio_Link_FrontEnd_Log.txt
+?? MDB/LOGS/20261115_215339_TB99_Invio_Link_FrontEnd_Log.txt
+?? MDB/LOGS/20261115_221741_TB99_Invio_Link_FrontEnd_Log.txt
+?? MDB/LOGS/20261115_221745_TB99_Invio_Link_FrontEnd_Log.txt
+?? MDB/LOGS/20261115_221750_TB99_Invio_Link_FrontEnd_Log.txt
+?? "OBJECT/MODULES/Msys_TB99_LINK_ Mdl04_IMPORTA_NOMI_OGGETTI.bas"
+?? "OBJECT/MODULES/Msys_TB99_LINK_ Mdl05_INVIA_LINK_FRONTEND.bas"
+    ESITO: OK
+
+=== 2a) ADD di tutte le modifiche   [22:25:56]
+    COMANDO: git add -A
