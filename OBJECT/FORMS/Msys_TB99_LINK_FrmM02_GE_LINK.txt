@@ -1,6 +1,6 @@
 Version =19
 VersionRequired =19
-Checksum =234827947
+Checksum =-234827606
 Begin Form
     RecordSelectors = NotDefault
     NavigationButtons = NotDefault
@@ -11,24 +11,24 @@ Begin Form
     PictureAlignment =2
     DatasheetGridlinesBehavior =3
     GridY =10
-    Width =16443
+    Width =17566
     DatasheetFontHeight =11
-    ItemSuffix =22
+    ItemSuffix =25
     DatasheetGridlinesColor =15062992
     RecSrcDt = Begin
-        0x4b060a80bea0e640
+        0xdf208241bfa0e640
     End
     GUID = Begin
-        0xe2ed45441bfaa04cbb99119919dfeb2b
+        0x2b74915838d9bf44b20054b60a8a0f1f
     End
     NameMap = Begin
         0x0acc0e55000000007e7a50107085e04a8ce3042bb0e473df01000000fb18c17b ,
         0xbea0e64000000000000000004d007300790073005f0054004200390039005f00 ,
         0x4c0049004e004b005f00460072006d005300300035005f004c0049004e004b00 ,
-        0x000000000000940dfdc29cead94bab22653e5d40a45f06000000e2ed45441bfa ,
-        0xa04cbb99119919dfeb2b53006f00740074006f0046006f0072006d005f004c00 ,
-        0x49004e004b0000000000000047cff2fe0a56ed4cb550e74114d604d406000000 ,
-        0xe2ed45441bfaa04cbb99119919dfeb2b53006f00740074006f0046006f007200 ,
+        0x000000000000813d7970683b234c85f22626fbf46c6e060000002b74915838d9 ,
+        0xbf44b20054b60a8a0f1f53006f00740074006f0046006f0072006d005f004c00 ,
+        0x49004e004b000000000000009fe2248512f09447a243cae6c0bac19506000000 ,
+        0x2b74915838d9bf44b20054b60a8a0f1f53006f00740074006f0046006f007200 ,
         0x6d005f004f00470047004500540054004900000000000000a3a5f3894f06bf48 ,
         0xa15e57c1ecb51a16010000007557b13abea0e64000000000000000004d007300 ,
         0x790073005f0054004200390039005f004c0049004e004b005f00460072006d00 ,
@@ -52,8 +52,12 @@ Begin Form
         0x00000000000003bbbd6208039341a271b78073cc170d0700000041de69bcb44f ,
         0x7545b8a9648ca122ca1e44006100740061006200610073006500000000000000 ,
         0x6fb20201030e37408282b3193ef83b950700000041de69bcb44f7545b8a9648c ,
-        0xa122ca1e490044005f004f0042004a0000000000000000000000000000000000 ,
-        0x0000000000000c000000050000000000000000000000000000000000
+        0xa122ca1e490044005f004f0042004a0000000000000032c25883971a174f853d ,
+        0x1fff8ed28d1c01000000c27f1c41bfa0e6400000000000000000550054004900 ,
+        0x4c004900540041005f004d007300790073005f00460072006d00320031005f00 ,
+        0x49004d0050004f005200540041005f004f004700470045005400540049000000 ,
+        0x00000000000000000000000000000000000000000c0000000500000000000000 ,
+        0x00000000000000000000
     End
     Caption ="TB99 - Catalogo dei collegamenti"
     DatasheetFontName ="Calibri"
@@ -66,6 +70,15 @@ Begin Form
             FontSize =11
             BorderColor =16777215
             ForeColor =13598509
+            FontName ="Aptos"
+        End
+        Begin CommandButton
+            TextFontFamily =0
+            Width =1701
+            Height =283
+            FontSize =11
+            FontWeight =400
+            ForeColor =2102279
             FontName ="Aptos"
         End
         Begin TextBox
@@ -97,127 +110,220 @@ Begin Form
             Height =1701
             BorderColor =13750737
         End
-        Begin Section
-            Height =10860
-            Name ="Corpo"
+        Begin FormHeader
+            Height =520
+            BackColor =15783096
+            Name ="IntestazioneMaschera"
             GUID = Begin
-                0x709acfd4471bb345b36d16ec8186e458
+                0xbdb4ec31d6895b4ebf1e27101d70e3a4
             End
             Begin
                 Begin Label
                     OverlapFlags =85
-                    Left =200
-                    Top =100
-                    Width =11340
-                    Height =450
-                    FontSize =14
+                    Left =150
+                    Top =70
+                    Width =8500
+                    Height =380
+                    FontSize =12
                     FontWeight =700
                     Name ="LBL_TIT01"
-                    Caption ="TB99 - TABELLE COLLEGATE, OGGETTI E DESTINAZIONI"
+                    Caption ="TB99 - CATALOGO DEI COLLEGAMENTI"
                     GUID = Begin
-                        0xf382cdd657e52446a99b64defea8774a
+                        0x3cff899ec76ff945b712e1661789eca4
                     End
                 End
+                Begin CommandButton
+                    OverlapFlags =93
+                    Left =8800
+                    Top =60
+                    Width =3300
+                    Height =400
+                    Name ="Cmd_Pg01"
+                    Caption ="1 - COLLEGAMENTI"
+                    OnClick ="[Event Procedure]"
+                    GUID = Begin
+                        0xb41e4f9dd36a884fab49785c62574dc8
+                    End
+                End
+                Begin CommandButton
+                    OverlapFlags =215
+                    Left =8800
+                    Top =60
+                    Width =3300
+                    Height =400
+                    TabIndex =1
+                    Name ="Cmd_Pg02"
+                    Caption ="2 - IMPORTA OGGETTI"
+                    OnClick ="[Event Procedure]"
+                    GUID = Begin
+                        0x0abef37c1b7cd94b9c43047c001fbf31
+                    End
+                End
+                Begin TextBox
+                    Visible = NotDefault
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =15700
+                    Top =60
+                    Width =700
+                    Height =300
+                    TabIndex =2
+                    Name ="TXT_NAME"
+                    ControlSource ="=[SottoForm_LINK].[Form]![Name_TXT]"
+                    GUID = Begin
+                        0x83e38adcdf195943bffbc866ca1da15d
+                    End
+                End
+                Begin TextBox
+                    Visible = NotDefault
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =16500
+                    Top =60
+                    Width =700
+                    Height =300
+                    TabIndex =3
+                    Name ="TXT_ID_OBJ"
+                    ControlSource ="=[SottoForm_OGGETTI].[Form]![ID_OBJ_TXT]"
+                    GUID = Begin
+                        0x71917202e9887547be4bfc0f78c9f934
+                    End
+                End
+            End
+        End
+        Begin Section
+            Height =7995
+            Name ="Corpo"
+            GUID = Begin
+                0xe8d923b806ac3b44b4513ac947908b1a
+            End
+            Begin
                 Begin Tab
                     OverlapFlags =85
-                    Left =200
-                    Top =648
-                    Width =15880
-                    Height =10212
+                    Style =2
+                    Width =17536
+                    Height =7968
                     Name ="TabCtl_01"
                     GUID = Begin
-                        0xd9fcacb1e48c4c4ea32eb2e8824955bf
+                        0x531024c76535b943aedf2a7d7b182cac
                     End
                     Begin
                         Begin Page
                             OverlapFlags =87
-                            Left =312
-                            Top =1092
-                            Width =15660
-                            Height =9660
+                            Left =60
+                            Top =60
+                            Width =17416
+                            Height =7848
                             Name ="Pg_01"
                             Caption ="COLLEGAMENTI"
                             GUID = Begin
-                                0x3fa4fc59b4671a46bc65729aeb7bd738
+                                0x096c4a665a3aa0409ef5efd955fb621b
                             End
                             Begin
                                 Begin Label
                                     OverlapFlags =215
-                                    Left =500
-                                    Top =1250
+                                    Left =60
+                                    Top =60
                                     Width =8505
                                     Height =300
                                     FontWeight =700
                                     Name ="LBL_LINK"
                                     Caption ="1 - TABELLE COLLEGATE (con oggetti nel loro database)"
                                     GUID = Begin
-                                        0x66b9d4b1e2c9cc45b69eca1190b244f1
+                                        0x07920e2a195bcf47a240c80dd11e4515
                                     End
                                 End
                                 Begin Subform
                                     OverlapFlags =215
-                                    Left =500
-                                    Top =1580
-                                    Width =15309
-                                    Height =3118
+                                    Left =60
+                                    Top =390
+                                    Width =17416
+                                    Height =3800
                                     Name ="SottoForm_LINK"
                                     SourceObject ="Form.Msys_TB99_LINK_FrmS05_LINK"
                                     GUID = Begin
-                                        0x940dfdc29cead94bab22653e5d40a45f
+                                        0x813d7970683b234c85f22626fbf46c6e
                                     End
                                 End
                                 Begin Label
                                     OverlapFlags =215
-                                    Left =500
-                                    Top =4948
+                                    Left =60
+                                    Top =4390
                                     Width =8505
                                     Height =300
                                     FontWeight =700
                                     Name ="LBL_OGGETTI"
                                     Caption ="2 - OGGETTI della tabella selezionata"
                                     GUID = Begin
-                                        0xce3584ecb1caf142a6b0c1dc7fb6563d
+                                        0x5bca62185fa17c4baac61200beb379cd
                                     End
                                 End
                                 Begin Subform
                                     OverlapFlags =215
-                                    Left =500
-                                    Top =5278
-                                    Width =8505
-                                    Height =5103
+                                    Left =60
+                                    Top =4720
+                                    Width =9579
+                                    Height =3185
                                     Name ="SottoForm_OGGETTI"
                                     SourceObject ="Form.Msys_TB99_LINK_FrmS03_OGGETTI"
                                     LinkChildFields ="Name"
                                     LinkMasterFields ="TXT_NAME"
                                     GUID = Begin
-                                        0x47cff2fe0a56ed4cb550e74114d604d4
+                                        0x9fe2248512f09447a243cae6c0bac195
                                     End
                                 End
                                 Begin Label
                                     OverlapFlags =215
-                                    Left =9255
-                                    Top =4948
-                                    Width =6237
+                                    Left =9839
+                                    Top =4390
+                                    Width =6804
                                     Height =300
                                     FontWeight =700
                                     Name ="LBL_PATH_DB"
                                     Caption ="3 - DESTINAZIONI dell'oggetto selezionato"
                                     GUID = Begin
-                                        0xa2d383cf1b846b488e2d774093e2fc68
+                                        0x79873d41c7ea1148816c1439fabb4951
                                     End
                                 End
                                 Begin Subform
                                     OverlapFlags =215
-                                    Left =9255
-                                    Top =5278
-                                    Width =6634
-                                    Height =5103
+                                    Left =9839
+                                    Top =4720
+                                    Width =7637
+                                    Height =3185
                                     Name ="SottoForm_PATH_DB"
                                     SourceObject ="Form.Msys_TB99_LINK_FrmS04_PATH_DB"
                                     LinkChildFields ="ID_OBJ"
                                     LinkMasterFields ="TXT_ID_OBJ"
                                     GUID = Begin
-                                        0x3c0627f9912a1d45890754436b8a4f4e
+                                        0x9d29c34fa52e2b43bbff32f20e71ce11
+                                    End
+                                End
+                            End
+                        End
+                        Begin Page
+                            OverlapFlags =215
+                            Left =60
+                            Top =60
+                            Width =17416
+                            Height =7848
+                            Name ="Pg_02"
+                            Caption ="IMPORTA OGGETTI"
+                            GUID = Begin
+                                0x2dd040252deab240929ccae9426a40db
+                            End
+                            Begin
+                                Begin Subform
+                                    OverlapFlags =247
+                                    OldBorderStyle =0
+                                    Left =60
+                                    Top =60
+                                    Width =17416
+                                    Height =7845
+                                    Name ="SottoForm_IMPORTA"
+                                    SourceObject ="Form.UTILITA_Msys_Frm21_IMPORTA_OGGETTI"
+                                    GUID = Begin
+                                        0x2438ae44b834b7419181f4d0c5b293f9
                                     End
                                 End
                             End
@@ -225,176 +331,142 @@ Begin Form
                         Begin Page
                             Visible = NotDefault
                             OverlapFlags =215
-                            Left =312
-                            Top =1092
-                            Width =15660
-                            Height =9660
-                            Name ="Pg_02"
-                            Caption ="PAGINA 02"
-                            GUID = Begin
-                                0x2e42e7204562d345b275aecaa241164c
-                            End
-                        End
-                        Begin Page
-                            Visible = NotDefault
-                            OverlapFlags =215
-                            Left =312
-                            Top =1092
-                            Width =15660
-                            Height =9660
+                            Left =60
+                            Top =60
+                            Width =17412
+                            Height =7848
                             Name ="Pg_03"
                             Caption ="PAGINA 03"
                             GUID = Begin
-                                0xb207324fbae67c49b9cd827a777f82a9
+                                0xaad97bfa5eab6a4cbea9bc7e0dfcddc4
                             End
                         End
                         Begin Page
                             Visible = NotDefault
                             OverlapFlags =215
-                            Left =312
-                            Top =1092
-                            Width =15660
-                            Height =9660
+                            Left =60
+                            Top =60
+                            Width =17412
+                            Height =7848
                             Name ="Pg_04"
                             Caption ="PAGINA 04"
                             GUID = Begin
-                                0x8856bd61ec0c6c4e871e06ac83d9b920
+                                0xeb31d221bfc882409750b3d8303677d8
                             End
                         End
                         Begin Page
                             Visible = NotDefault
                             OverlapFlags =215
-                            Left =312
-                            Top =1092
-                            Width =15660
-                            Height =9660
+                            Left =60
+                            Top =60
+                            Width =17412
+                            Height =7848
                             Name ="Pg_05"
                             Caption ="PAGINA 05"
                             GUID = Begin
-                                0x93593bbd3c2ed5448d3fcf580cccc152
+                                0xbb62a1e2b87f5a43b664c1a23dc8dc72
                             End
                         End
                         Begin Page
                             Visible = NotDefault
                             OverlapFlags =215
-                            Left =312
-                            Top =1092
-                            Width =15660
-                            Height =9660
+                            Left =60
+                            Top =60
+                            Width =17412
+                            Height =7848
                             Name ="Pg_06"
                             Caption ="PAGINA 06"
                             GUID = Begin
-                                0x0f8756a478afbf41a6d83197cb4097d9
+                                0x3d0f338f8bc7f142b78ecda0e055960d
                             End
                         End
                         Begin Page
                             Visible = NotDefault
                             OverlapFlags =215
-                            Left =312
-                            Top =1092
-                            Width =15660
-                            Height =9660
+                            Left =60
+                            Top =60
+                            Width =17412
+                            Height =7848
                             Name ="Pg_07"
                             Caption ="PAGINA 07"
                             GUID = Begin
-                                0xd507340ae4426c479552da048056b17f
+                                0x96910a8433f08649ad18199fe0d4acb1
                             End
                         End
                         Begin Page
                             Visible = NotDefault
                             OverlapFlags =215
-                            Left =312
-                            Top =1092
-                            Width =15660
-                            Height =9660
+                            Left =60
+                            Top =60
+                            Width =17412
+                            Height =7848
                             Name ="Pg_08"
                             Caption ="PAGINA 08"
                             GUID = Begin
-                                0x88b97253e085764e8e1eef3fe0610263
+                                0x0aaecb4efc6fe44e97d45f4fc5fdbc9d
                             End
                         End
                         Begin Page
                             Visible = NotDefault
                             OverlapFlags =215
-                            Left =312
-                            Top =1092
-                            Width =15660
-                            Height =9660
+                            Left =60
+                            Top =60
+                            Width =17412
+                            Height =7848
                             Name ="Pg_09"
                             Caption ="PAGINA 09"
                             GUID = Begin
-                                0x05f2355acbf7104ebc7694984dd864f4
+                                0x4903c08089a54940b577ea6e5c449f22
                             End
                         End
                         Begin Page
                             Visible = NotDefault
                             OverlapFlags =215
-                            Left =312
-                            Top =1092
-                            Width =15660
-                            Height =9660
+                            Left =60
+                            Top =60
+                            Width =17412
+                            Height =7848
                             Name ="Pg_10"
                             Caption ="PAGINA 10"
                             GUID = Begin
-                                0x09eb20f77a69e2409298d903d2b875a1
+                                0x7f8aeaff1d6b8e42814b0800501ea8bd
                             End
                         End
                         Begin Page
                             Visible = NotDefault
                             OverlapFlags =215
-                            Left =312
-                            Top =1092
-                            Width =15660
-                            Height =9660
+                            Left =60
+                            Top =60
+                            Width =17412
+                            Height =7848
                             Name ="Pg_11"
                             Caption ="PAGINA 11"
                             GUID = Begin
-                                0x652a4ecd631d7c45b59fac2c29b3adc0
+                                0xf107287981c7974f91f98a709971dbf4
                             End
                         End
                         Begin Page
                             Visible = NotDefault
                             OverlapFlags =215
-                            Left =312
-                            Top =1092
-                            Width =15660
-                            Height =9660
+                            Left =60
+                            Top =60
+                            Width =17412
+                            Height =7848
                             Name ="Pg_12"
                             Caption ="PAGINA 12"
                             GUID = Begin
-                                0x1f916bd597a0fb46a1bcec21f9ef5e15
+                                0x6b536457718ee9479e2c05ce8ff46d0a
                             End
                         End
                     End
                 End
-                Begin TextBox
-                    Visible = NotDefault
-                    OverlapFlags =85
-                    IMESentenceMode =3
-                    Left =11907
-                    Top =100
-                    Height =300
-                    TabIndex =1
-                    Name ="TXT_NAME"
-                    ControlSource ="=[SottoForm_LINK].[Form]![Name_TXT]"
-                    GUID = Begin
-                        0xf72419df431d6446bdb200ed0bd6f44f
-                    End
-                End
-                Begin TextBox
-                    Visible = NotDefault
-                    OverlapFlags =85
-                    IMESentenceMode =3
-                    Left =14175
-                    Top =100
-                    Height =300
-                    TabIndex =2
-                    Name ="TXT_ID_OBJ"
-                    ControlSource ="=[SottoForm_OGGETTI].[Form]![ID_OBJ_TXT]"
-                    GUID = Begin
-                        0xee7d9228634131479d049d79e0d58b61
-                    End
-                End
+            End
+        End
+        Begin FormFooter
+            Height =0
+            Name ="PièDiPaginaMaschera"
+            GUID = Begin
+                0x5a038d0cc8e7864f960dbc75cea0c314
             End
         End
     End
@@ -409,20 +481,44 @@ Option Compare Database
 
 '==================================================================================================
 ' Msys_TB99_LINK_FrmM02_GE_LINK  -  catalogo TB99 (maschera contenitore, non associata)
-'   TabCtl_01 = 12 pagine: Pg_01 COLLEGAMENTI visibile, Pg_02..Pg_12 nascoste (usi futuri)
-'   Pg_01 contiene la catena delle 3 sottomaschere:
-'     SottoForm_LINK     = Msys_TB99_LINK_FrmS05_LINK     (Msys_TB99_LINK)
-'     SottoForm_OGGETTI  = Msys_TB99_LINK_FrmS03_OGGETTI  (Msys_TB99_LINK_Object,  legame TXT_NAME   -> Name)
-'     SottoForm_PATH_DB  = Msys_TB99_LINK_FrmS04_PATH_DB  (Msys_TB99_LINK_PATH_DB, legame TXT_ID_OBJ -> ID_OBJ)
-'   TXT_NAME e TXT_ID_OBJ sono caselle nascoste che leggono la riga selezionata nelle sottomaschere
-' #01# Form_Load = apre sulla prima pagina
+'   TabCtl_01 = 12 pagine, dimensionate sulla maschera UTILITA_Msys_Frm21_IMPORTA_OGGETTI
+'     Pg_01 COLLEGAMENTI     : catena delle 3 sottomaschere
+'        SottoForm_LINK     = Msys_TB99_LINK_FrmS05_LINK     (Msys_TB99_LINK)
+'        SottoForm_OGGETTI  = Msys_TB99_LINK_FrmS03_OGGETTI  (Msys_TB99_LINK_Object,  legame TXT_NAME   -> Name)
+'        SottoForm_PATH_DB  = Msys_TB99_LINK_FrmS04_PATH_DB  (Msys_TB99_LINK_PATH_DB, legame TXT_ID_OBJ -> ID_OBJ)
+'     Pg_02 IMPORTA OGGETTI  : SottoForm_IMPORTA = UTILITA_Msys_Frm21_IMPORTA_OGGETTI (a misura, senza bordo e barre)
+'     Pg_03..Pg_12           : nascoste (usi futuri)
+'   Le linguette sono i pulsanti Cmd_Pg01 / Cmd_Pg02 nell'intestazione, che resta sempre visibile:
+'   la maschera UTILITA e stata ridotta all'80% (17.416 x 7.845 twip) per stare senza barre di scorrimento.
+' #01# Form_Load   = apre sulla prima pagina con la catena allineata
+' #02# MostraPagina = attiva una pagina, evidenzia il suo pulsante e torna in alto a sinistra
+' #03# Cmd_Pg01_Click / Cmd_Pg02_Click = pulsanti-linguetta
 '==================================================================================================
 Private Sub Form_Load()
     '#01# prima pagina e catena allineata
     On Error Resume Next
-    Me!TabCtl_01.Value = 0
+    MostraPagina 0
     Me!TXT_NAME.Requery
     Me!SottoForm_OGGETTI.Requery
     Me!TXT_ID_OBJ.Requery
     Me!SottoForm_PATH_DB.Requery
+End Sub
+
+Private Sub MostraPagina(ByVal nPagina As Integer)
+    '#02# pagina attiva, pulsante in grassetto, fuoco sul primo controllo della pagina
+    On Error Resume Next
+    Me!TabCtl_01.Value = nPagina
+    Me!Cmd_Pg01.FontBold = (nPagina = 0)
+    Me!Cmd_Pg02.FontBold = (nPagina = 1)
+    If nPagina = 0 Then Me!SottoForm_LINK.SetFocus Else Me!SottoForm_IMPORTA.SetFocus
+End Sub
+
+Private Sub Cmd_Pg01_Click()
+    '#03# linguetta 1 - COLLEGAMENTI
+    MostraPagina 0
+End Sub
+
+Private Sub Cmd_Pg02_Click()
+    '#03# linguetta 2 - IMPORTA OGGETTI
+    MostraPagina 1
 End Sub

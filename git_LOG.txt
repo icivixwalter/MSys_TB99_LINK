@@ -838,3 +838,77 @@ C:/CASA/LINGUAGGI/ACCESS/PROGETTI_MDB/MSYS/MSys_TB99_LINK
 
 === 2a) ADD di tutte le modifiche   [22:55:13]
     COMANDO: git add -A
+warning: in the working copy of 'git_LOG.txt', LF will be replaced by CRLF the next time Git touches it
+    ESITO: OK
+
+=== 2b) COMMIT   [22:55:14]
+    COMANDO: git commit -m "2026_11_15_H22_M55_S13_aggiornamento_MSYS"
+[main 4ea7097] 2026_11_15_H22_M55_S13_aggiornamento_MSYS
+ 11 files changed, 1582 insertions(+), 8 deletions(-)
+ create mode 100644 MDB/BACKUP_CLAUDE_2026_11_15_22_39_08_MASCHERE/MSys_TB99_LINK.mdb
+ create mode 100644 MDB/BACKUP_CLAUDE_2026_11_15_22_47_53_MASCHERA_M02/MSys_TB99_LINK.mdb
+ create mode 100644 MDB/BACKUP_CLAUDE_2026_11_15_22_51_39_MASCHERA_TAB/MSys_TB99_LINK.mdb
+ create mode 100644 OBJECT/FORMS/Msys_TB99_LINK_FrmM02_GE_LINK.txt
+ create mode 100644 OBJECT/FORMS/Msys_TB99_LINK_FrmS03_OGGETTI.txt
+ create mode 100644 OBJECT/FORMS/Msys_TB99_LINK_FrmS04_PATH_DB.txt
+ create mode 100644 OBJECT/FORMS/Msys_TB99_LINK_FrmS05_LINK.txt
+    ESITO: OK
+
+=== 2c) CONTROLLO MAIN SVUOTATO su GitHub   [22:55:15]
+    COMANDO: git fetch origin
+    ESITO: OK
+
+=== 3) PULL da GitHub   [22:55:16]
+    COMANDO: git pull --no-edit
+Already up to date.
+    ESITO: OK
+
+=== 4) PUSH su GitHub   [22:55:17]
+    COMANDO: git push
+To https://github.com/icivixwalter/MSys_TB99_LINK.git
+   e2ffbeb..4ea7097  main -> main
+    ESITO: OK
+
+=== 5) STATO FINALE   [22:55:22]
+    COMANDO: git status -sb
+## main...origin/main
+ M ZIP_7ZIP_INCREMENTALE_FILE_LOG.TXT
+ M git_LOG.txt
+    ESITO: OK
+
+################################################################
+### ESITO FINALE: TUTTO OK - repository allineato con GitHub
+### FINE  15/11/2026  22:55:22
+################################################################
+
+################################################################
+### INIZIO  15/11/2026  23:30:54
+### PC: HPGIACOMO   UTENTE: giaco
+### REPOSITORY: C:\CASA\LINGUAGGI\ACCESS\PROGETTI_MDB\MSYS\MSys_TB99_LINK
+################################################################
+
+=== 0) CONTROLLO REPOSITORY   [23:30:54]
+    COMANDO: git rev-parse --show-toplevel
+C:/CASA/LINGUAGGI/ACCESS/PROGETTI_MDB/MSYS/MSys_TB99_LINK
+    ESITO: OK
+
+=== 1) STATUS   [23:30:54]
+    COMANDO: git status -s
+ M AA_SALVATAGGI/2026_11_15_ZIP_SALVATAGGI_MSys_TB99_LINK.GE614
+ M AA_SALVATAGGI/2026_11_15_ZIP_SALVATAGGI_MSys_TB99_LINK_LISTA.TXT
+ M MASTER_PLAN/MSys_TB99_00_MASTER_PLAN.html
+ M MASTER_PLAN/MSys_TB99_00_MASTER_PLAN.md
+ M MDB/BACKUP_CLAUDE_2026_11_15_22_47_53_MASCHERA_M02/MSys_TB99_LINK.mdb
+ M MDB/MSys_TB99_LINK.mdb
+ M OBJECT/FORMS/Msys_TB99_LINK_FrmM02_GE_LINK.txt
+ M Project_MSys_TB99_LINK.sublime-workspace
+ M ZIP_7ZIP_INCREMENTALE_FILE_LOG.TXT
+ M git_LOG.txt
+?? MDB/BACKUP_CLAUDE_2026_11_15_23_00_18_MASCHERA_PAG2/
+?? MDB/BACKUP_CLAUDE_2026_11_15_23_05_02_MASCHERA_LINGUETTE/
+?? MDB/BACKUP_CLAUDE_2026_11_15_23_24_06_RIDUZIONE_80/
+?? OBJECT/FORMS/UTILITA_Msys_Frm21_IMPORTA_OGGETTI.txt
+    ESITO: OK
+
+=== 2a) ADD di tutte le modifiche   [23:30:55]
+    COMANDO: git add -A

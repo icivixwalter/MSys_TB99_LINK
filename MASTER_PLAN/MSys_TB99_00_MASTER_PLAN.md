@@ -214,7 +214,8 @@ Esempio: portare i menu nel progetto master `MSYS_ATTIVA_GEST_OGGETTI.mdb`.
 
 | Maschera | Origine | Contenuto |
 | --- | --- | --- |
-| `Msys_TB99_LINK_FrmM02_GE_LINK` | – (non associata) | **maschera principale**: titolo e struttura a schede `TabCtl_01` con 12 pagine; visibile solo `Pg_01` "COLLEGAMENTI", le pagine da `Pg_02` a `Pg_12` sono nascoste e servono per usi futuri |
+| `Msys_TB99_LINK_FrmM02_GE_LINK` | – (non associata) | **maschera principale**, senza barre di scorrimento, circa 1.464 × 710 pixel (17.686 twip di larghezza). L'**intestazione fissa** è su una riga: titolo e pulsanti-linguetta **"1 - COLLEGAMENTI"** e **"2 - IMPORTA OGGETTI"** (`Cmd_Pg01`, `Cmd_Pg02`; quello attivo è in grassetto). Nel corpo c'è la struttura a schede `TabCtl_01` con 12 pagine, senza linguette proprie, su misura della UTILITA ridotta; le pagine da `Pg_03` a `Pg_12` sono nascoste |
+| `UTILITA_Msys_Frm21_IMPORTA_OGGETTI` | – | in `Pg_02` (`SottoForm_IMPORTA`), a misura esatta e senza bordo. **Ridotta all'80%** in posizioni, misure e caratteri (21.770 × 9.807 → 17.416 × 7.845 twip; caratteri 11→9, 9→7, 8→7 pt), senza barre di scorrimento, selettori e pulsanti di spostamento. La riduzione vale solo per la copia dentro `MSys_TB99_LINK.mdb` |
 | `Msys_TB99_LINK_FrmS05_LINK` | `Msys_TB99_LINK` (solo tabelle con oggetti) | foglio dati delle **tabelle collegate**: mini-progetto, nome, file, cartella, verifica, tipo, `Connect`, N. oggetti |
 | `Msys_TB99_LINK_FrmS03_OGGETTI` | `Msys_TB99_LINK_Object` | foglio dati degli **oggetti della tabella selezionata** (nel suo database) |
 | `Msys_TB99_LINK_FrmS04_PATH_DB` | `Msys_TB99_LINK_PATH_DB` | foglio dati delle **destinazioni dell'oggetto selezionato** |
@@ -231,14 +232,15 @@ Esempio: portare i menu nel progetto master `MSYS_ATTIVA_GEST_OGGETTI.mdb`.
   |   QUERY  MSys_DF01_COMANDI_Qry01_01_...  |   MSYS_ATTIVA_GEST_OGGETTI.mdb     |
   |   ...                                    |   GE_MSys_DF01_COMANDI.mdb         |
   +-----------------------------------------------------------------------------+
-  Pg_02 ... Pg_12 nascoste
+  +-[ IMPORTA OGGETTI ]  Pg_02: UTILITA_Msys_Frm21_IMPORTA_OGGETTI ridotta all'80%, a misura esatta, senza barre
+  Pg_03 ... Pg_12 nascoste
 ```
 
 - **Catena:** le caselle nascoste `TXT_NAME` (`=[SottoForm_LINK].[Form]![Name_TXT]`) e `TXT_ID_OBJ` (`=[SottoForm_OGGETTI].[Form]![ID_OBJ_TXT]`) collegano le sottomaschere: `SottoForm_OGGETTI` su `TXT_NAME` → `Name`, `SottoForm_PATH_DB` su `TXT_ID_OBJ` → `ID_OBJ`. L'evento `Form_Current` di S05 e S03 aggiorna le sottomaschere che seguono.
 - **Nuove righe:** un oggetto aggiunto nella 2 prende da solo la tabella selezionata; una destinazione aggiunta nella 3 prende da sola l'oggetto selezionato.
 - **Costruzione:** le maschere sono state costruite il 15/11/2026 direttamente in Access, perché su questo PC non si possono importare da testo. Il loro testo esportato è in `OBJECT\FORMS\`.
 - **Prova:** all'apertura, la 1 è su `MSys_DF01_COMANDI` (6 oggetti); la 2 mostra `Msys_DF01_Frm01_M01_GE_COMANDI` (`ID_OBJ` 1133); la 3 mostra `MSYS_ATTIVA_GEST_OGGETTI.mdb`.
-- **Backup:** `MDB\BACKUP_CLAUDE_2026_11_15_22_51_39_MASCHERA_TAB\`.
+- **Backup:** `MDB\BACKUP_CLAUDE_2026_11_15_22_51_39_MASCHERA_TAB\` e `MDB\BACKUP_CLAUDE_2026_11_15_23_00_18_MASCHERA_PAG2\`, `MDB\BACKUP_CLAUDE_2026_11_15_23_05_02_MASCHERA_LINGUETTE\`, `MDB\BACKUP_CLAUDE_2026_11_15_23_24_06_RIDUZIONE_80\`.
 
 ## 6. Strumenti (MASTER_PLAN\STRUMENTI\)
 
