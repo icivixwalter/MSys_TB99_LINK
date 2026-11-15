@@ -2,14 +2,14 @@
 7-Zip 24.05 (x64) : Copyright (c) 1999-2024 Igor Pavlov : 2024-05-14
 
 Scanning the drive for archives:
-  0M Scan c:\CASA\LINGUAGGI\ACCESS\PROGET . YS\MSys_TB99_LINK\AA_SALVATAGGI\                                                                            1 file, 25269890 bytes (25 MiB)
+  0M Scan c:\CASA\LINGUAGGI\ACCESS\PROGET . YS\MSys_TB99_LINK\AA_SALVATAGGI\                                                                            1 file, 32156921 bytes (31 MiB)
 
 Listing archive: c:\CASA\LINGUAGGI\ACCESS\PROGETTI_MDB\MSYS\MSys_TB99_LINK\AA_SALVATAGGI\2026_11_15_ZIP_SALVATAGGI_MSys_TB99_LINK.zip
 
 --
 Path = c:\CASA\LINGUAGGI\ACCESS\PROGETTI_MDB\MSYS\MSys_TB99_LINK\AA_SALVATAGGI\2026_11_15_ZIP_SALVATAGGI_MSys_TB99_LINK.zip
 Type = zip
-Physical Size = 25269890
+Physical Size = 32156921
 
    Date      Time    Attr         Size   Compressed  Name
 ------------------- ----- ------------ ------------  ------------------------
@@ -18,7 +18,7 @@ Physical Size = 25269890
 2026-11-06 17:53:43 ....A          880          528  git_COMMIT.BAT
 2026-11-15 08:37:57 ....A         4903         1857  git_CREATE_GITHUB.BAT
 2026-11-07 17:50:46 ....A         5432         2011  git_CREA_SALVATAGGIO.BAT
-2026-11-15 22:55:22 ....A        35375         4329  git_LOG.txt
+2026-11-15 23:31:10 ....A        38059         4570  git_LOG.txt
 2026-11-15 08:37:55 ....A           90           90  git_OpenGitHub.bat
 2026-11-06 17:53:43 ....A          925          448  git_OPEN_OVERLEAF.BAT
 2026-11-15 08:37:55 ....A         5341         1870  git_PULL.BAT
@@ -26,7 +26,7 @@ Physical Size = 25269890
 2026-11-15 08:37:54 ....A        14960         4641  git_RICOSTRUISCI_GITHUB.BAT
 2026-11-15 08:37:30 ....A        10750         3374  git_STATUS+PULL+ADD+COMMIT+PUSH.BAT
 2026-11-06 17:53:43 ....A          280          207  git_STATUS.BAT
-2026-11-15 22:55:05 D....            0            0  MDB
+2026-11-15 23:30:48 D....            0            0  MDB
 2026-11-15 08:42:28 D....            0            0  MDB\BACKUP_CLAUDE_2026_11_15_08_42_28_RELINK
 2026-08-14 16:45:14 ....A     10240000      1957380  MDB\BACKUP_CLAUDE_2026_11_15_08_42_28_RELINK\MSys_TB99_LINK.mdb
 2026-11-15 08:54:13 D....            0            0  MDB\BACKUP_CLAUDE_2026_11_15_08_54_13_SOLO_MSYS
@@ -45,10 +45,16 @@ Physical Size = 25269890
 2026-11-15 22:11:27 ....A     10510336      2162680  MDB\BACKUP_CLAUDE_2026_11_15_22_14_41_OGGETTI_SORGENTE\MSys_TB99_LINK.mdb
 2026-11-15 22:39:08 D....            0            0  MDB\BACKUP_CLAUDE_2026_11_15_22_39_08_MASCHERE
 2026-11-15 22:25:39 ....A     10510336      2169328  MDB\BACKUP_CLAUDE_2026_11_15_22_39_08_MASCHERE\MSys_TB99_LINK.mdb
-2026-11-15 22:47:53 D....            0            0  MDB\BACKUP_CLAUDE_2026_11_15_22_47_53_MASCHERA_M02
-2026-11-15 22:45:11 ....A     10510336      2154673  MDB\BACKUP_CLAUDE_2026_11_15_22_47_53_MASCHERA_M02\MSys_TB99_LINK.mdb
+2026-11-15 22:59:01 D....            0            0  MDB\BACKUP_CLAUDE_2026_11_15_22_47_53_MASCHERA_M02
+2026-11-15 22:59:01 ....A     10510336      2260578  MDB\BACKUP_CLAUDE_2026_11_15_22_47_53_MASCHERA_M02\MSys_TB99_LINK.mdb
 2026-11-15 22:51:39 D....            0            0  MDB\BACKUP_CLAUDE_2026_11_15_22_51_39_MASCHERA_TAB
 2026-11-15 22:51:23 ....A     10510336      2154094  MDB\BACKUP_CLAUDE_2026_11_15_22_51_39_MASCHERA_TAB\MSys_TB99_LINK.mdb
+2026-11-15 23:00:18 D....            0            0  MDB\BACKUP_CLAUDE_2026_11_15_23_00_18_MASCHERA_PAG2
+2026-11-15 22:59:05 ....A     10510336      2255039  MDB\BACKUP_CLAUDE_2026_11_15_23_00_18_MASCHERA_PAG2\MSys_TB99_LINK.mdb
+2026-11-15 23:05:02 D....            0            0  MDB\BACKUP_CLAUDE_2026_11_15_23_05_02_MASCHERA_LINGUETTE
+2026-11-15 23:03:17 ....A     10510336      2159238  MDB\BACKUP_CLAUDE_2026_11_15_23_05_02_MASCHERA_LINGUETTE\MSys_TB99_LINK.mdb
+2026-11-15 23:24:06 D....            0            0  MDB\BACKUP_CLAUDE_2026_11_15_23_24_06_RIDUZIONE_80
+2026-11-15 23:22:54 ....A     10510336      2173506  MDB\BACKUP_CLAUDE_2026_11_15_23_24_06_RIDUZIONE_80\MSys_TB99_LINK.mdb
 2026-11-15 22:17:50 D....            0            0  MDB\LOGS
 2026-08-07 16:13:49 ....A       141595         4959  MDB\LOGS\20260728_181149_TB99_Link_Rebuild_Log.txt
 2026-08-07 16:13:49 ....A       141595         4958  MDB\LOGS\20260728_181645_TB99_Link_Rebuild_Log.txt
@@ -80,14 +86,15 @@ Physical Size = 25269890
 2026-08-07 16:13:50 ....A       104694         4162  MDB\LOGS\LogErrori.txt
 2026-08-07 16:13:50 ....A          474          229  MDB\LOGS\LogEventi.txt
 2026-08-07 16:13:50 ....A         8772          164  MDB\LOGS\LogInfo.txt
-2026-11-15 22:55:05 ....A     10510336      2146581  MDB\MSys_TB99_LINK.mdb
+2026-11-15 23:30:48 ....A     10510336      2238733  MDB\MSys_TB99_LINK.mdb
 2026-11-07 18:13:33 ....A           23           23  MSYS_N02________________________________________________________________MSYS.txt
 2026-11-15 22:42:08 D....            0            0  OBJECT
-2026-11-15 22:52:52 D....            0            0  OBJECT\FORMS
-2026-11-15 22:52:52 ....A        18815         3152  OBJECT\FORMS\Msys_TB99_LINK_FrmM02_GE_LINK.txt
+2026-11-15 23:26:36 D....            0            0  OBJECT\FORMS
+2026-11-15 23:26:31 ....A        22550         3972  OBJECT\FORMS\Msys_TB99_LINK_FrmM02_GE_LINK.txt
 2026-11-15 22:40:20 ....A        11325         2145  OBJECT\FORMS\Msys_TB99_LINK_FrmS03_OGGETTI.txt
 2026-11-15 22:40:20 ....A        11580         1925  OBJECT\FORMS\Msys_TB99_LINK_FrmS04_PATH_DB.txt
 2026-11-15 22:52:30 ....A        16363         2697  OBJECT\FORMS\Msys_TB99_LINK_FrmS05_LINK.txt
+2026-11-15 23:25:43 ....A       744227        98496  OBJECT\FORMS\UTILITA_Msys_Frm21_IMPORTA_OGGETTI.txt
 2026-11-15 21:09:55 D....            0            0  OBJECT\MODULES
 2026-11-15 21:53:43 ....A        61327        11485  OBJECT\MODULES\Msys_TB99_LINK_ Mdl01_RICOSTRUICI_LINK_TABELLE.bas
 2026-11-15 21:53:43 ....A        23523         4861  OBJECT\MODULES\Msys_TB99_LINK_ Mdl04_IMPORTA_NOMI_OGGETTI.bas
@@ -111,4 +118,4 @@ Physical Size = 25269890
 2026-11-07 18:13:33 ....A            0            0  Zip_N70____________________________________________CRIPTA_DECODIFICA.txt
 2026-11-07 18:13:33 ....A           56           51  ZZ________________________________________________________________________ZZ.txt
 ------------------- ----- ------------ ------------  ------------------------
-2026-11-15 22:55:22          125780003     25250220  77 files, 20 folders
+2026-11-15 23:31:10          158061657     32135617  81 files, 23 folders
