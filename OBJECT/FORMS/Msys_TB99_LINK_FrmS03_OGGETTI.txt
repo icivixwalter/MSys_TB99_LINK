@@ -1,0 +1,295 @@
+Version =19
+VersionRequired =19
+Checksum =234827621
+Begin Form
+    DividingLines = NotDefault
+    AllowDesignChanges = NotDefault
+    DefaultView =2
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =8036
+    DatasheetFontHeight =11
+    ItemSuffix =14
+    DatasheetGridlinesColor =15062992
+    GUID = Begin
+        0xa3a5f3894f06bf48a15e57c1ecb51a16
+    End
+    NameMap = Begin
+        0x0acc0e55000000004f52e53cfe074a42bdd31a20642c8a0e000000002d5e40e7 ,
+        0xbda0e64000000000000000004d007300790073005f0054004200390039005f00 ,
+        0x4c0049004e004b005f004f0062006a00650063007400000000000000709dc18c ,
+        0x403d0e42be1d534be3e2bd5f070000004f52e53cfe074a42bdd31a20642c8a0e ,
+        0x5400490050004f005f004f00470047004500540054004f005f00730000000000 ,
+        0x0000cbb428689e9fb24cae08c0ca1ef07ec2070000004f52e53cfe074a42bdd3 ,
+        0x1a20642c8a0e4e004f004d0045005f004f00470047004500540054004f005f00 ,
+        0x730000000000000078884a3074d8954694148d431aacc5ef070000004f52e53c ,
+        0xfe074a42bdd31a20642c8a0e4400610074006100620061007300650000000000 ,
+        0x0000bd149d50b9487a458210166092837773070000004f52e53cfe074a42bdd3 ,
+        0x1a20642c8a0e440061007400610062006100730065005f007300000000000000 ,
+        0xb790e0bca3be6647b125ca1ff639ba5f070000004f52e53cfe074a42bdd31a20 ,
+        0x642c8a0e5300630065006c005f0062000000000000000a0d75ade4a994408d11 ,
+        0xbd797c4ac7d9070000004f52e53cfe074a42bdd31a20642c8a0e490044005f00 ,
+        0x4f0042004a000000000000000eff83de26407e468b06568e4591e04f07000000 ,
+        0x4f52e53cfe074a42bdd31a20642c8a0e4e0061006d0065000000000000000000 ,
+        0x00000000000000000000000000000c0000000500000000000000000000000000 ,
+        0x00000000
+    End
+    RecordSource ="SELECT * FROM Msys_TB99_LINK_Object ORDER BY TIPO_OGGETTO_s, NOME_OGGETTO_s; "
+    Caption ="Oggetti della tabella"
+    OnCurrent ="[Event Procedure]"
+    DatasheetFontName ="Calibri"
+    NoSaveCTIWhenDisabled =1
+    Begin
+        Begin Label
+            BackStyle =0
+            TextFontFamily =0
+            FontSize =11
+            BorderColor =16777215
+            ForeColor =13598509
+            FontName ="Aptos"
+        End
+        Begin CheckBox
+            BorderLineStyle =0
+            LabelX =230
+            LabelY =-30
+            BorderColor =13750737
+        End
+        Begin TextBox
+            FELineBreak = NotDefault
+            TextFontFamily =0
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontSize =11
+            BorderColor =13750737
+            ForeColor =2102279
+            FontName ="Aptos"
+        End
+        Begin Section
+            Height =5952
+            Name ="Corpo"
+            GUID = Begin
+                0xe62b66de07f0514db3b1ac686177011b
+            End
+            Begin
+                Begin TextBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =3500
+                    Top =200
+                    Width =4536
+                    Height =300
+                    Name ="TIPO_OGGETTO_s_TXT"
+                    ControlSource ="TIPO_OGGETTO_s"
+                    GUID = Begin
+                        0x5be0eab4acb4664ab48482651b006ca7
+                    End
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =300
+                            Top =200
+                            Width =3100
+                            Height =300
+                            Name ="TIPO_OGGETTO_s_LBL"
+                            Caption ="Tipo oggetto"
+                            GUID = Begin
+                                0x0433d4145dd4cd488bb49b91476e00bf
+                            End
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =3500
+                    Top =600
+                    Width =4536
+                    Height =300
+                    ColumnWidth =4500
+                    TabIndex =1
+                    Name ="NOME_OGGETTO_s_TXT"
+                    ControlSource ="NOME_OGGETTO_s"
+                    GUID = Begin
+                        0xc028690f9c7d904b9776b58da0145ce3
+                    End
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =300
+                            Top =600
+                            Width =3100
+                            Height =300
+                            Name ="NOME_OGGETTO_s_LBL"
+                            Caption ="Nome oggetto"
+                            GUID = Begin
+                                0xbed3782ea83d5d45a4356a0745d91226
+                            End
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =3500
+                    Top =1000
+                    Width =4536
+                    Height =300
+                    ColumnWidth =3516
+                    TabIndex =2
+                    Name ="Database_TXT"
+                    ControlSource ="Database"
+                    GUID = Begin
+                        0xb0a0e06bdfd84c4eb127c7d121deb7df
+                    End
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =300
+                            Top =1000
+                            Width =3100
+                            Height =300
+                            Name ="Database_LBL"
+                            Caption ="Database (file)"
+                            GUID = Begin
+                                0xd30c1d3c4d1030419a8d4e011137f604
+                            End
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =3500
+                    Top =1400
+                    Width =4536
+                    Height =300
+                    ColumnWidth =7476
+                    TabIndex =3
+                    Name ="Database_s_TXT"
+                    ControlSource ="Database_s"
+                    GUID = Begin
+                        0x244611b4c863de42a998b15d1cfcc7e1
+                    End
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =300
+                            Top =1400
+                            Width =3100
+                            Height =300
+                            Name ="Database_s_LBL"
+                            Caption ="Cartella"
+                            GUID = Begin
+                                0x036f6aeb8f5832439fcba0b966b6b998
+                            End
+                        End
+                    End
+                End
+                Begin CheckBox
+                    OverlapFlags =85
+                    Left =3500
+                    Top =1800
+                    Width =300
+                    Height =300
+                    TabIndex =4
+                    Name ="Scel_b_TXT"
+                    ControlSource ="Scel_b"
+                    GUID = Begin
+                        0xdcdf74c4a5556c46966f1ad7550b0602
+                    End
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =300
+                            Top =1800
+                            Width =3100
+                            Height =300
+                            Name ="Scel_b_LBL"
+                            Caption ="Scelto"
+                            GUID = Begin
+                                0x23fd5fa267737d4db70cbbf1335b9de3
+                            End
+                        End
+                    End
+                End
+                Begin TextBox
+                    Locked = NotDefault
+                    TabStop = NotDefault
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =3500
+                    Top =2200
+                    Height =300
+                    TabIndex =5
+                    Name ="ID_OBJ_TXT"
+                    ControlSource ="ID_OBJ"
+                    GUID = Begin
+                        0x7d16bfb2c2e21a4c93362f7baf9ff6a1
+                    End
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =300
+                            Top =2200
+                            Width =3100
+                            Height =300
+                            Name ="ID_OBJ_LBL"
+                            Caption ="ID oggetto"
+                            GUID = Begin
+                                0x4a6240a0120e64429a95ddc1aa48a9dd
+                            End
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =3500
+                    Top =2600
+                    Width =4536
+                    Height =300
+                    TabIndex =6
+                    Name ="Name_TXT"
+                    ControlSource ="Name"
+                    GUID = Begin
+                        0xf22114c4e8dbf147ba5e67e1246c6d6f
+                    End
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =300
+                            Top =2600
+                            Width =3100
+                            Height =300
+                            Name ="Name_LBL"
+                            Caption ="Tabella collegata"
+                            GUID = Begin
+                                0x336bcbbb0453334292f71836e1f89c45
+                            End
+                        End
+                    End
+                End
+            End
+        End
+    End
+End
+CodeBehindForm
+Attribute VB_GlobalNameSpace = False
+Attribute VB_Creatable = True
+Attribute VB_PredeclaredId = True
+Attribute VB_Exposed = False
+Option Compare Database
+
+
+'==================================================================================================
+' Msys_TB99_LINK_FrmS03_OGGETTI  -  oggetti della tabella collegata (Msys_TB99_LINK_Object)
+' #01# Form_Current = quando cambia l'oggetto selezionato, aggiorna le destinazioni (S04)
+'==================================================================================================
+Private Sub Form_Current()
+    '#01# aggiorna la sottomaschera delle destinazioni nella maschera principale
+    On Error Resume Next
+    Me.Parent!TXT_ID_OBJ.Requery
+    Me.Parent!SottoForm_PATH_DB.Requery
+End Sub

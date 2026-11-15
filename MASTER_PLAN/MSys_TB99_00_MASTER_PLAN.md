@@ -101,7 +101,7 @@ La regola precedente era sbagliata: collegava a una tabella tutti gli oggetti di
 - **Analisi:** `RICOSTRUISCI_TB99_OGGETTI_2_ANALIZZA.py` ora tiene solo gli oggetti che stanno nel database sorgente della tabella. Il catalogo che riceve contiene nome della tabella e database sorgente.
 - **Oggetti ricostruiti:** 137 (prima 612), su 19 tabelle. Il controllo "oggetti fuori dal database della tabella" dà 0.
 - **Destinazioni ricostruite:** le 62 coppie tabella → database già presenti sono state ricreate per tutti gli oggetti della tabella, per un totale di 316 righe. È stata esclusa la destinazione uguale al database in cui l'oggetto si trova già.
-- **`POPOLA_LINK_FRONTEND_pf`:** aggancia ogni nuova destinazione a tutti gli oggetti della tabella. Il sorgente nuovo è in `OBJECT\MODULES\`, ma **va ancora caricato nel database**: quando l'ho fatto, `MSys_TB99_LINK.mdb` era aperto in Access e il caricamento è stato annullato. Con i dati attuali la versione nel database si comporta allo stesso modo: un secondo `POPOLA` aggiunge 0 righe e `VERIFICA` trova 23 link.
+- **`POPOLA_LINK_FRONTEND_pf`:** aggancia ogni nuova destinazione a tutti gli oggetti della tabella. Il primo caricamento è stato annullato perché `MSys_TB99_LINK.mdb` era aperto in Access; il modulo è stato caricato alle 22:39, a database chiuso. Un secondo `POPOLA` aggiunge 0 righe e `VERIFICA` trova 23 link.
 - **Tabelle senza oggetti nel proprio database:** non ricevono destinazioni. Sono `MSys_DF01_COMANDI_TMP`, `MSYS_DF03_GROUP_QUOTE`, `MSys_DF04_utile`, `Msys_DF12_ObjProgetti`, le 4 tabelle di `MSys_TB40.mdb`, `MSys_TB07_MENU_FUNZIONI_NW`, `MSys_TB08_MENU_OGGETTI`, `MSys_TAB40_FORM_MASTER*` e `Msys_ESPORTA_ELENCO_OGGETTI_DB_TMP`. `MSys_TB40.mdb` e `MSys_DF12.mdb` non contengono nessun oggetto: le loro query e maschere stanno nei front-end.
 - **Backup:** `MDB\BACKUP_CLAUDE_2026_11_15_22_14_41_OGGETTI_SORGENTE\`.
 
@@ -210,6 +210,36 @@ Esempio: portare i menu nel progetto master `MSYS_ATTIVA_GEST_OGGETTI.mdb`.
 | `Msys_TB99_LINK_ Mdl04_IMPORTA_NOMI_OGGETTI` | `ImportaOggettiDaDatabaseEsterno` | elenca tutti gli oggetti dei database sorgente **senza** legarli a una tabella (`Name` vuoto); non cancella più le righe legate |
 | `Msys_TB99_LINK_ Mdl05_INVIA_LINK_FRONTEND` | `POPOLA_…`, `VERIFICA_…`, `INVIA_LINK_FRONTEND_pf` | invia a ogni destinazione attiva i link delle tabelle usate dai suoi oggetti (scheda dedicata) |
 
+### 5.1 Maschere del catalogo
+
+| Maschera | Origine | Contenuto |
+| --- | --- | --- |
+| `Msys_TB99_LINK_FrmM02_GE_LINK` | – (non associata) | **maschera principale**: titolo e struttura a schede `TabCtl_01` con 12 pagine; visibile solo `Pg_01` "COLLEGAMENTI", le pagine da `Pg_02` a `Pg_12` sono nascoste e servono per usi futuri |
+| `Msys_TB99_LINK_FrmS05_LINK` | `Msys_TB99_LINK` (solo tabelle con oggetti) | foglio dati delle **tabelle collegate**: mini-progetto, nome, file, cartella, verifica, tipo, `Connect`, N. oggetti |
+| `Msys_TB99_LINK_FrmS03_OGGETTI` | `Msys_TB99_LINK_Object` | foglio dati degli **oggetti della tabella selezionata** (nel suo database) |
+| `Msys_TB99_LINK_FrmS04_PATH_DB` | `Msys_TB99_LINK_PATH_DB` | foglio dati delle **destinazioni dell'oggetto selezionato** |
+
+```
+  Msys_TB99_LINK_FrmM02_GE_LINK
+  TB99 - TABELLE COLLEGATE, OGGETTI E DESTINAZIONI
+  +-[ COLLEGAMENTI ]------------------------------------------------------------+
+  | 1 - TABELLE COLLEGATE                 SottoForm_LINK    (FrmS05)            |
+  |   MSys_DF01  MSys_DF01_COMANDI  MSys_DF01.mdb  C:\...\MSys_DF01\MDB\  OK  6 |
+  |   MSys_DF02  MSys_DF02_TIPO_OGGETTO  ...                                    |
+  | 2 - OGGETTI  SottoForm_OGGETTI (FrmS03)  | 3 - DESTINAZIONI  SottoForm_PATH_DB |
+  |   FORMS  Msys_DF01_Frm01_M01_GE_...      |   (FrmS04)                         |
+  |   QUERY  MSys_DF01_COMANDI_Qry01_01_...  |   MSYS_ATTIVA_GEST_OGGETTI.mdb     |
+  |   ...                                    |   GE_MSys_DF01_COMANDI.mdb         |
+  +-----------------------------------------------------------------------------+
+  Pg_02 ... Pg_12 nascoste
+```
+
+- **Catena:** le caselle nascoste `TXT_NAME` (`=[SottoForm_LINK].[Form]![Name_TXT]`) e `TXT_ID_OBJ` (`=[SottoForm_OGGETTI].[Form]![ID_OBJ_TXT]`) collegano le sottomaschere: `SottoForm_OGGETTI` su `TXT_NAME` → `Name`, `SottoForm_PATH_DB` su `TXT_ID_OBJ` → `ID_OBJ`. L'evento `Form_Current` di S05 e S03 aggiorna le sottomaschere che seguono.
+- **Nuove righe:** un oggetto aggiunto nella 2 prende da solo la tabella selezionata; una destinazione aggiunta nella 3 prende da sola l'oggetto selezionato.
+- **Costruzione:** le maschere sono state costruite il 15/11/2026 direttamente in Access, perché su questo PC non si possono importare da testo. Il loro testo esportato è in `OBJECT\FORMS\`.
+- **Prova:** all'apertura, la 1 è su `MSys_DF01_COMANDI` (6 oggetti); la 2 mostra `Msys_DF01_Frm01_M01_GE_COMANDI` (`ID_OBJ` 1133); la 3 mostra `MSYS_ATTIVA_GEST_OGGETTI.mdb`.
+- **Backup:** `MDB\BACKUP_CLAUDE_2026_11_15_22_51_39_MASCHERA_TAB\`.
+
 ## 6. Strumenti (MASTER_PLAN\STRUMENTI\)
 
 | File | Cosa fa |
@@ -233,10 +263,6 @@ Limiti dell'analisi:
 - le dipendenze tra database diversi non vengono seguite.
 
 ## 7. Piano dei prossimi passi
-
-### 7.0 Subito
-
-Chiudere `MSys_TB99_LINK.mdb` e caricare il nuovo `Mdl05` da `OBJECT\MODULES\Msys_TB99_LINK_ Mdl05_INVIA_LINK_FRONTEND.bas`. In alternativa, chiedere a Claude di farlo con il database chiuso.
 
 ### 7.1 Fase 1 – Menu nel progetto master (l'esempio di questo progetto)
 

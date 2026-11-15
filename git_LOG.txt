@@ -742,3 +742,99 @@ C:/CASA/LINGUAGGI/ACCESS/PROGETTI_MDB/MSYS/MSys_TB99_LINK
 
 === 2a) ADD di tutte le modifiche   [22:25:56]
     COMANDO: git add -A
+warning: in the working copy of 'git_LOG.txt', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'MASTER_PLAN/STRUMENTI/RIALLINEA_TB99_LINK.ps1', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'MASTER_PLAN/STRUMENTI/RICOSTRUISCI_TB99_OGGETTI_1_ESPORTA.ps1', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'MASTER_PLAN/STRUMENTI/md2html.py', LF will be replaced by CRLF the next time Git touches it
+    ESITO: OK
+
+=== 2b) COMMIT   [22:25:58]
+    COMANDO: git commit -m "2026_11_15_H22_M25_S55_aggiornamento_MSYS"
+[main e2ffbeb] 2026_11_15_H22_M25_S55_aggiornamento_MSYS
+ 37 files changed, 4291 insertions(+), 507 deletions(-)
+ create mode 100644 MASTER_PLAN/MSys_TB99_00_MASTER_PLAN.html
+ create mode 100644 MASTER_PLAN/MSys_TB99_00_MASTER_PLAN.md
+ create mode 100644 MASTER_PLAN/MSys_TB99_Mdl05_INVIA_LINK_FRONTEND.html
+ create mode 100644 MASTER_PLAN/MSys_TB99_Mdl05_INVIA_LINK_FRONTEND.md
+ create mode 100644 MASTER_PLAN/STRUMENTI/GENERA_HTML.bat
+ create mode 100644 MASTER_PLAN/STRUMENTI/RIALLINEA_TB99_LINK.ps1
+ create mode 100644 MASTER_PLAN/STRUMENTI/RICOSTRUISCI_TB99_OGGETTI_1_ESPORTA.ps1
+ create mode 100644 MASTER_PLAN/STRUMENTI/RICOSTRUISCI_TB99_OGGETTI_2_ANALIZZA.py
+ create mode 100644 MASTER_PLAN/STRUMENTI/RICOSTRUISCI_TB99_OGGETTI_3_CARICA.ps1
+ create mode 100644 MASTER_PLAN/STRUMENTI/md2html.py
+ create mode 100644 MDB/BACKUP_CLAUDE_2026_11_15_08_42_28_RELINK/MSys_TB99_LINK.mdb
+ create mode 100644 MDB/BACKUP_CLAUDE_2026_11_15_08_54_13_SOLO_MSYS/MSys_TB99_LINK.mdb
+ create mode 100644 MDB/BACKUP_CLAUDE_2026_11_15_09_01_20_MDL05/MSys_TB99_LINK.mdb
+ create mode 100644 MDB/BACKUP_CLAUDE_2026_11_15_19_50_21_MENU_TB06/MSys_TB99_LINK.mdb
+ create mode 100644 MDB/BACKUP_CLAUDE_2026_11_15_21_03_23_RISTRUTTURA/MSys_TB99_LINK.mdb
+ create mode 100644 MDB/BACKUP_CLAUDE_2026_11_15_21_43_28_CATENA/MSys_TB99_LINK.mdb
+ create mode 100644 MDB/BACKUP_CLAUDE_2026_11_15_21_46_26_PRIMA_PROVE/MSys_TB99_LINK.mdb
+ create mode 100644 MDB/BACKUP_CLAUDE_2026_11_15_22_14_41_OGGETTI_SORGENTE/MSys_TB99_LINK.mdb
+ create mode 100644 MDB/LOGS/20261115_090352_TB99_Invio_Link_FrontEnd_Log.txt
+ create mode 100644 MDB/LOGS/20261115_090353_TB99_Invio_Link_FrontEnd_Log.txt
+ create mode 100644 MDB/LOGS/20261115_090355_TB99_Invio_Link_FrontEnd_Log.txt
+ create mode 100644 MDB/LOGS/20261115_090429_TB99_Invio_Link_FrontEnd_Log.txt
+ create mode 100644 MDB/LOGS/20261115_090448_TB99_Invio_Link_FrontEnd_Log.txt
+ create mode 100644 MDB/LOGS/20261115_210954_TB99_Invio_Link_FrontEnd_Log.txt
+ create mode 100644 MDB/LOGS/20261115_214628_TB99_Invio_Link_FrontEnd_Log.txt
+ create mode 100644 MDB/LOGS/20261115_215242_TB99_Invio_Link_FrontEnd_Log.txt
+ create mode 100644 MDB/LOGS/20261115_215302_TB99_Invio_Link_FrontEnd_Log.txt
+ create mode 100644 MDB/LOGS/20261115_215339_TB99_Invio_Link_FrontEnd_Log.txt
+ create mode 100644 MDB/LOGS/20261115_221741_TB99_Invio_Link_FrontEnd_Log.txt
+ create mode 100644 MDB/LOGS/20261115_221745_TB99_Invio_Link_FrontEnd_Log.txt
+ create mode 100644 MDB/LOGS/20261115_221750_TB99_Invio_Link_FrontEnd_Log.txt
+ create mode 100644 OBJECT/MODULES/Msys_TB99_LINK_ Mdl04_IMPORTA_NOMI_OGGETTI.bas
+ create mode 100644 OBJECT/MODULES/Msys_TB99_LINK_ Mdl05_INVIA_LINK_FRONTEND.bas
+    ESITO: OK
+
+=== 2c) CONTROLLO MAIN SVUOTATO su GitHub   [22:25:58]
+    COMANDO: git fetch origin
+    ESITO: OK
+
+=== 3) PULL da GitHub   [22:25:59]
+    COMANDO: git pull --no-edit
+Already up to date.
+    ESITO: OK
+
+=== 4) PUSH su GitHub   [22:26:00]
+    COMANDO: git push
+To https://github.com/icivixwalter/MSys_TB99_LINK.git
+   c97255d..e2ffbeb  main -> main
+    ESITO: OK
+
+=== 5) STATO FINALE   [22:26:07]
+    COMANDO: git status -sb
+## main...origin/main
+ M git_LOG.txt
+    ESITO: OK
+
+################################################################
+### ESITO FINALE: TUTTO OK - repository allineato con GitHub
+### FINE  15/11/2026  22:26:08
+################################################################
+
+################################################################
+### INIZIO  15/11/2026  22:55:13
+### PC: HPGIACOMO   UTENTE: giaco
+### REPOSITORY: C:\CASA\LINGUAGGI\ACCESS\PROGETTI_MDB\MSYS\MSys_TB99_LINK
+################################################################
+
+=== 0) CONTROLLO REPOSITORY   [22:55:13]
+    COMANDO: git rev-parse --show-toplevel
+C:/CASA/LINGUAGGI/ACCESS/PROGETTI_MDB/MSYS/MSys_TB99_LINK
+    ESITO: OK
+
+=== 1) STATUS   [22:55:13]
+    COMANDO: git status -s
+ M MASTER_PLAN/MSys_TB99_00_MASTER_PLAN.html
+ M MASTER_PLAN/MSys_TB99_00_MASTER_PLAN.md
+ M MDB/MSys_TB99_LINK.mdb
+ M git_LOG.txt
+?? MDB/BACKUP_CLAUDE_2026_11_15_22_39_08_MASCHERE/
+?? MDB/BACKUP_CLAUDE_2026_11_15_22_47_53_MASCHERA_M02/
+?? MDB/BACKUP_CLAUDE_2026_11_15_22_51_39_MASCHERA_TAB/
+?? OBJECT/FORMS/
+    ESITO: OK
+
+=== 2a) ADD di tutte le modifiche   [22:55:13]
+    COMANDO: git add -A
