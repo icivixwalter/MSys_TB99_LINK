@@ -979,3 +979,57 @@ C:/CASA/LINGUAGGI/ACCESS/PROGETTI_MDB/MSYS/MSys_TB99_LINK
 
 === 2a) ADD di tutte le modifiche   [23:31:23]
     COMANDO: git add -A
+warning: in the working copy of 'git_LOG.txt', LF will be replaced by CRLF the next time Git touches it
+    ESITO: OK
+
+=== 2b) COMMIT   [23:31:24]
+    COMANDO: git commit -m "2026_11_15_H23_M31_S22_aggiornamento_MSYS"
+[main 95e051d] 2026_11_15_H23_M31_S22_aggiornamento_MSYS
+ 4 files changed, 155 insertions(+), 83 deletions(-)
+ rename AA_SALVATAGGI/{2026_11_15_ZIP_SALVATAGGI_MSys_TB99_LINK.GE614 => 2026_11_15_ZIP_SALVATAGGI_MSys_TB99_LINK.zip} (74%)
+    ESITO: OK
+
+=== 2c) CONTROLLO MAIN SVUOTATO su GitHub   [23:31:24]
+    COMANDO: git fetch origin
+    ESITO: OK
+
+=== 3) PULL da GitHub   [23:31:25]
+    COMANDO: git pull --no-edit
+Already up to date.
+    ESITO: OK
+
+=== 4) PUSH su GitHub   [23:31:26]
+    COMANDO: git push
+To https://github.com/icivixwalter/MSys_TB99_LINK.git
+   9f756c9..95e051d  main -> main
+    ESITO: OK
+
+=== 5) STATO FINALE   [23:31:35]
+    COMANDO: git status -sb
+## main...origin/main
+ M git_LOG.txt
+    ESITO: OK
+
+################################################################
+### ESITO FINALE: TUTTO OK - repository allineato con GitHub
+### FINE  15/11/2026  23:31:36
+################################################################
+
+################################################################
+### INIZIO  17/11/2026  15:34:51
+### PC: HPGIACOMO   UTENTE: giaco
+### REPOSITORY: C:\CASA\LINGUAGGI\ACCESS\PROGETTI_MDB\MSYS\MSys_TB99_LINK
+################################################################
+
+=== 0) CONTROLLO REPOSITORY   [15:34:51]
+    COMANDO: git rev-parse --show-toplevel
+C:/CASA/LINGUAGGI/ACCESS/PROGETTI_MDB/MSYS/MSys_TB99_LINK
+    ESITO: OK
+
+=== 1) STATUS   [15:34:51]
+    COMANDO: git status -s
+ M git_LOG.txt
+    ESITO: OK
+
+=== 2a) ADD di tutte le modifiche   [15:34:51]
+    COMANDO: git add -A
