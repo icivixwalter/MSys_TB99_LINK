@@ -1,0 +1,12 @@
+TB99 - CANCELLA - QUERY - 17/11/2026 21:21:51
+DATABASE SORGENTE: C:\CASA\LINGUAGGI\ACCESS\PROGETTI_MDB\MSYS\MSys_DF03\MDB\MSys_DF03.mdb
+DATABASE CORRENTE: C:\CASA\LINGUAGGI\ACCESS\PROGETTI_MDB\MSYS\MSys_TB99_LINK\MDB\MSys_TB99_LINK.mdb
+====================================================================================================
+
+1) CANCELLAZIONE NEL DATABASE CORRENTE
+   QUERY (1)
+      Msys_DF03_Qry01_01_CODICI_QUOTE                                        CANCELLATO
+
+====================================================================================================
+CANCELLATI: 1   IMPORTATI/COLLEGATI: 0   NON ESEGUITI: 0
+

@@ -1,0 +1,12 @@
+TB99 - IMPORTA - QUERY - 17/11/2026 21:21:26
+DATABASE SORGENTE: C:\CASA\LINGUAGGI\ACCESS\PROGETTI_MDB\MSYS\MSys_DF03\MDB\MSys_DF03.mdb
+DATABASE CORRENTE: C:\CASA\LINGUAGGI\ACCESS\PROGETTI_MDB\MSYS\MSys_TB99_LINK\MDB\MSys_TB99_LINK.mdb
+====================================================================================================
+
+2) IMPORTAZIONE DAL DATABASE SORGENTE
+   QUERY (1)
+      Msys_DF03_Qry01_01_CODICI_QUOTE                                        IMPORTATO
+
+====================================================================================================
+CANCELLATI: 0   IMPORTATI/COLLEGATI: 1   NON ESEGUITI: 0
+

@@ -1160,3 +1160,68 @@ C:/CASA/LINGUAGGI/ACCESS/PROGETTI_MDB/MSYS/MSys_TB99_LINK
 
 === 2a) ADD di tutte le modifiche   [17:32:08]
     COMANDO: git add -A
+warning: in the working copy of 'Project_MSys_TB99_LINK.sublime-workspace', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'git_LOG.txt', LF will be replaced by CRLF the next time Git touches it
+    ESITO: OK
+
+=== 2b) COMMIT   [17:32:08]
+    COMANDO: git commit -m "2026_11_17_H17_M32_S08_aggiornamento_MSYS"
+[main 82f956a] 2026_11_17_H17_M32_S08_aggiornamento_MSYS
+ 2 files changed, 60 insertions(+), 2 deletions(-)
+    ESITO: OK
+
+=== 2c) CONTROLLO MAIN SVUOTATO su GitHub   [17:32:08]
+    COMANDO: git fetch origin
+    ESITO: OK
+
+=== 3) PULL da GitHub   [17:32:09]
+    COMANDO: git pull --no-edit
+Already up to date.
+    ESITO: OK
+
+=== 4) PUSH su GitHub   [17:32:10]
+    COMANDO: git push
+To https://github.com/icivixwalter/MSys_TB99_LINK.git
+   b0ae971..82f956a  main -> main
+    ESITO: OK
+
+=== 5) STATO FINALE   [17:32:13]
+    COMANDO: git status -sb
+## main...origin/main
+ M git_LOG.txt
+    ESITO: OK
+
+################################################################
+### ESITO FINALE: TUTTO OK - repository allineato con GitHub
+### FINE  17/11/2026  17:32:13
+################################################################
+
+################################################################
+### INIZIO  17/11/2026  21:22:22
+### PC: HPGIACOMO   UTENTE: giaco
+### REPOSITORY: C:\CASA\LINGUAGGI\ACCESS\PROGETTI_MDB\MSYS\MSys_TB99_LINK
+################################################################
+
+=== 0) CONTROLLO REPOSITORY   [21:22:22]
+    COMANDO: git rev-parse --show-toplevel
+C:/CASA/LINGUAGGI/ACCESS/PROGETTI_MDB/MSYS/MSys_TB99_LINK
+    ESITO: OK
+
+=== 0b) PROTEZIONE .gitignore - resta sul PC e negli zip, MAI su GitHub   [21:22:22]
+    .gitignore escluso da git: OK
+
+=== 1) STATUS   [21:22:23]
+    COMANDO: git status -s
+ M MDB/MSys_TB99_LINK.mdb
+ M OBJECT/FORMS/UTILITA_Msys_Frm21_IMPORTA_OGGETTI.txt
+ M ZIP_7ZIP_INCREMENTALE_FILE_LOG.TXT
+ M git_LOG.txt
+?? MASTER_PLAN/STRUMENTI/APPLICA_TB99_CATALOGO_FRM21.ps1
+?? MASTER_PLAN/STRUMENTI/APPLICA_TB99_CATALOGO_FRM21_BLOCCO.bas
+?? MDB/BACKUP_CLAUDE_2026_11_17_18_13_26_CATALOGO_FRM21/
+?? MDB/LOGS/TB99_IMPORTA_OGGETTI_20261117_212126.txt
+?? MDB/LOGS/TB99_IMPORTA_OGGETTI_20261117_212151.txt
+    ESITO: OK
+
+=== 2a) ADD di tutte le modifiche   [21:22:23]
+    COMANDO: git add -A
