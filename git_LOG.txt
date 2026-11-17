@@ -1102,3 +1102,61 @@ C:/CASA/LINGUAGGI/ACCESS/PROGETTI_MDB/MSYS/MSys_TB99_LINK
 
 === 2a) ADD di tutte le modifiche   [17:20:27]
     COMANDO: git add -A
+warning: in the working copy of 'Project_MSys_TB99_LINK.sublime-workspace', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'git_LOG.txt', LF will be replaced by CRLF the next time Git touches it
+    ESITO: OK
+
+=== 2b) COMMIT   [17:20:27]
+    COMANDO: git commit -m "2026_11_17_H17_M20_S26_aggiornamento_MSYS"
+[main b0ae971] 2026_11_17_H17_M20_S26_aggiornamento_MSYS
+ 10 files changed, 305 insertions(+), 2938 deletions(-)
+    ESITO: OK
+
+=== 2c) CONTROLLO MAIN SVUOTATO su GitHub   [17:20:27]
+    COMANDO: git fetch origin
+    ESITO: OK
+
+=== 3) PULL da GitHub   [17:20:28]
+    COMANDO: git pull --no-edit
+Already up to date.
+    ESITO: OK
+
+=== 4) PUSH su GitHub   [17:20:29]
+    COMANDO: git push
+To https://github.com/icivixwalter/MSys_TB99_LINK.git
+   811ce04..b0ae971  main -> main
+    ESITO: OK
+
+=== 5) STATO FINALE   [17:20:32]
+    COMANDO: git status -sb
+## main...origin/main
+ M git_LOG.txt
+    ESITO: OK
+
+################################################################
+### ESITO FINALE: TUTTO OK - repository allineato con GitHub
+### FINE  17/11/2026  17:20:32
+################################################################
+
+################################################################
+### INIZIO  17/11/2026  17:32:08
+### PC: HPGIACOMO   UTENTE: giaco
+### REPOSITORY: C:\CASA\LINGUAGGI\ACCESS\PROGETTI_MDB\MSYS\MSys_TB99_LINK
+################################################################
+
+=== 0) CONTROLLO REPOSITORY   [17:32:08]
+    COMANDO: git rev-parse --show-toplevel
+C:/CASA/LINGUAGGI/ACCESS/PROGETTI_MDB/MSYS/MSys_TB99_LINK
+    ESITO: OK
+
+=== 0b) PROTEZIONE .gitignore - resta sul PC e negli zip, MAI su GitHub   [17:32:08]
+    .gitignore escluso da git: OK
+
+=== 1) STATUS   [17:32:08]
+    COMANDO: git status -s
+ M Project_MSys_TB99_LINK.sublime-workspace
+ M git_LOG.txt
+    ESITO: OK
+
+=== 2a) ADD di tutte le modifiche   [17:32:08]
+    COMANDO: git add -A
