@@ -47,3 +47,82 @@
 [17/11/2026 21:22:15] 06.01 - ANNO_S = [2026]
 [17/11/2026 21:22:15] 06.02 - CWD = c:\CASA\LINGUAGGI\ACCESS\PROGETTI_MDB\MSYS\MSys_TB99_LINK
 [17/11/2026 21:22:15] 06.02 - Eseguo Zip_N70_DECODIFICA.bat
+[17/11/2026 21:22:24] 06.02 - Zip_N70_DECODIFICA.bat terminato. ERRORLEVEL=0
+[17/11/2026 21:22:26] 07.00 - SALVATAGGIO 7ZIP
+[17/11/2026 21:22:26] 07.00b - Rigenero la lista file con Zip_N70_CREA_ElencoFile.bat
+[17/11/2026 21:22:26] 07.00b - Lista file pronta - ERRORLEVEL=0
+[17/11/2026 21:22:26] 07.01 - CWD = c:\CASA\LINGUAGGI\ACCESS\PROGETTI_MDB\MSYS\MSys_TB99_LINK
+[17/11/2026 21:22:26] 07.01 - PATH_DEST_S = c:\CASA\LINGUAGGI\ACCESS\PROGETTI_MDB\MSYS\MSys_TB99_LINK\AA_SALVATAGGI
+[17/11/2026 21:22:26] 07.01 - TODAY = 2026_11_17
+[17/11/2026 21:22:26] 07.01 - FILE_S = ZIP_SALVATAGGI_MSys_TB99_LINK
+[17/11/2026 21:22:26] 07.01 - Lista file Zip_N70_ElencoFile.txt trovata OK
+[17/11/2026 21:22:26] 07.01 - OUT_ZIP = c:\CASA\LINGUAGGI\ACCESS\PROGETTI_MDB\MSYS\MSys_TB99_LINK\AA_SALVATAGGI\2026_11_17_ZIP_SALVATAGGI_MSys_TB99_LINK
+[17/11/2026 21:22:26] 07.02 - Eseguo: 7z u -tzip -r \"c:\CASA\LINGUAGGI\ACCESS\PROGETTI_MDB\MSYS\MSys_TB99_LINK\AA_SALVATAGGI\2026_11_17_ZIP_SALVATAGGI_MSys_TB99_LINK\" @Zip_N70_ElencoFile.txt
+
+7-Zip 24.05 (x64) : Copyright (c) 1999-2024 Igor Pavlov : 2024-05-14
+
+Scanning the drive:
+
+WARNING: Percorso specificato non valido.
+\\ATTENZIONE AGLI SPAZI DI FINE RIGA non ci devono essere altrimenti non salva\
+
+
+WARNING: Percorso specificato non valido.
+\\questo ä il secondo esempio con path e file liberi senza .\
+
+
+WARNING: Percorso specificato non valido.
+\\............................................................................\
+
+189 folders, 360 files, 276570224 bytes (264 MiB)
+
+Creating archive: c:\CASA\LINGUAGGI\ACCESS\PROGETTI_MDB\MSYS\MSys_TB99_LINK\AA_SALVATAGGI\2026_11_17_ZIP_SALVATAGGI_MSys_TB99_LINK.zip
+
+Add new data to archive: 189 folders, 360 files, 276570224 bytes (264 MiB)
+
+
+WARNING: Impossibile accedere al file. Il file ä utilizzato da un altro processo.
+ZIP_7ZIP_INCREMENTALE_FILE_LOG.TXT
+
+
+Files read from disk: 359
+Archive size: 141188843 bytes (135 MiB)
+
+Scan WARNINGS for files and folders:
+
+\\ATTENZIONE AGLI SPAZI DI FINE RIGA non ci devono essere altrimenti non salva\ : Percorso specificato non valido.
+\\questo ä il secondo esempio con path e file liberi senza .\ : Percorso specificato non valido.
+\\............................................................................\ : Percorso specificato non valido.
+----------------
+Scan WARNINGS: 3
+
+WARNINGS for files:
+
+ZIP_7ZIP_INCREMENTALE_FILE_LOG.TXT : Impossibile accedere al file. Il file ä utilizzato da un altro processo.
+----------------
+WARNING: Cannot open 1 file
+[17/11/2026 21:22:29] 07.02 - 7-Zip OK con WARNING noto (ERRORLEVEL=1) - righe // nella lista
+[17/11/2026 21:22:29] 07.02 - I file sono stati archiviati correttamente, procedo
+[17/11/2026 21:22:29] 07.03 - Contenuto c:\CASA\LINGUAGGI\ACCESS\PROGETTI_MDB\MSYS\MSys_TB99_LINK\AA_SALVATAGGI dopo 7z:
+ Il volume nell'unit√† C non ha etichetta.
+ Numero di serie del volume: 8A04-483D
+
+ Directory di c:\CASA\LINGUAGGI\ACCESS\PROGETTI_MDB\MSYS\MSys_TB99_LINK\AA_SALVATAGGI
+
+17/11/2026  21:22    <DIR>          .
+17/11/2026  21:22    <DIR>          ..
+15/11/2026  23:31        32.156.921 2026_11_15_ZIP_SALVATAGGI_MSys_TB99_LINK.zip
+15/11/2026  23:31            11.409 2026_11_15_ZIP_SALVATAGGI_MSys_TB99_LINK_LISTA.TXT
+17/11/2026  21:22       141.188.843 2026_11_17_ZIP_SALVATAGGI_MSys_TB99_LINK.zip
+17/11/2026  16:52             1.323 Zip_N70_ElencoFile_PRECEDENTE.txt
+               4 File    173.358.496 byte
+               2 Directory  470.214.119.424 byte disponibili
+[17/11/2026 21:22:29] 07.04 - Esporto lista contenuto archivio (con .zip esplicito)
+[17/11/2026 21:22:29] 07.04 - 7z l OK (ERRORLEVEL=0)
+[17/11/2026 21:22:29] 07.04 - Lista esportata in c:\CASA\LINGUAGGI\ACCESS\PROGETTI_MDB\MSYS\MSys_TB99_LINK\AA_SALVATAGGI\2026_11_17_ZIP_SALVATAGGI_MSys_TB99_LINK_LISTA.TXT
+[17/11/2026 21:22:31] 08.00 - CHIAMO CRIPTA
+[17/11/2026 21:22:31] 08.01 - CWD = c:\CASA\LINGUAGGI\ACCESS\PROGETTI_MDB\MSYS\MSys_TB99_LINK
+[17/11/2026 21:22:31] 08.01 - Eseguo Zip_N70_CRIPTA.bat
+[17/11/2026 21:22:38] 08.01 - Zip_N70_CRIPTA.bat terminato. ERRORLEVEL=0
+[17/11/2026 21:22:38] 09.00 - SOSPENSIONE ED USCITA
+[17/11/2026 21:22:38] ==================== FINE BAT ====================
