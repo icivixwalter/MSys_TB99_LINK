@@ -1335,3 +1335,127 @@ D  MDB/BACKUP_CLAUDE_2026_11_17_18_13_26_CATALOGO_FRM21/MSys_TB99_LINK.mdb
 
 === 2a) ADD di tutte le modifiche   [22:11:14]
     COMANDO: git add -A
+warning: in the working copy of 'git_LOG.txt', LF will be replaced by CRLF the next time Git touches it
+    ESITO: OK
+
+=== 2b) COMMIT   [22:11:15]
+    COMANDO: git commit -m "2026_11_21_H22_M11_S12_aggiornamento_MSYS"
+[main 2c8d3ee] 2026_11_21_H22_M11_S12_aggiornamento_MSYS
+ 31 files changed, 348 insertions(+), 121 deletions(-)
+ delete mode 100644 AA_SALVATAGGI/2026_11_15_ZIP_SALVATAGGI_MSys_TB99_LINK.zip
+ delete mode 100644 AA_SALVATAGGI/2026_11_15_ZIP_SALVATAGGI_MSys_TB99_LINK_LISTA.TXT
+ delete mode 100644 MDB/BACKUP_CLAUDE_2026_11_15_08_42_28_RELINK/MSys_TB99_LINK.mdb
+ delete mode 100644 MDB/BACKUP_CLAUDE_2026_11_15_08_54_13_SOLO_MSYS/MSys_TB99_LINK.mdb
+ delete mode 100644 MDB/BACKUP_CLAUDE_2026_11_15_09_01_20_MDL05/MSys_TB99_LINK.mdb
+ delete mode 100644 MDB/BACKUP_CLAUDE_2026_11_15_19_50_21_MENU_TB06/MSys_TB99_LINK.mdb
+ delete mode 100644 MDB/BACKUP_CLAUDE_2026_11_15_21_03_23_RISTRUTTURA/MSys_TB99_LINK.mdb
+ delete mode 100644 MDB/BACKUP_CLAUDE_2026_11_15_21_43_28_CATENA/MSys_TB99_LINK.mdb
+ delete mode 100644 MDB/BACKUP_CLAUDE_2026_11_15_21_46_26_PRIMA_PROVE/MSys_TB99_LINK.mdb
+ delete mode 100644 MDB/BACKUP_CLAUDE_2026_11_15_22_14_41_OGGETTI_SORGENTE/MSys_TB99_LINK.mdb
+ delete mode 100644 MDB/BACKUP_CLAUDE_2026_11_15_22_39_08_MASCHERE/MSys_TB99_LINK.mdb
+ delete mode 100644 MDB/BACKUP_CLAUDE_2026_11_15_22_47_53_MASCHERA_M02/MSys_TB99_LINK.mdb
+ delete mode 100644 MDB/BACKUP_CLAUDE_2026_11_15_22_51_39_MASCHERA_TAB/MSys_TB99_LINK.mdb
+ delete mode 100644 MDB/BACKUP_CLAUDE_2026_11_15_23_00_18_MASCHERA_PAG2/MSys_TB99_LINK.mdb
+ delete mode 100644 MDB/BACKUP_CLAUDE_2026_11_15_23_05_02_MASCHERA_LINGUETTE/MSys_TB99_LINK.mdb
+ delete mode 100644 MDB/BACKUP_CLAUDE_2026_11_15_23_24_06_RIDUZIONE_80/MSys_TB99_LINK.mdb
+ delete mode 100644 MDB/BACKUP_CLAUDE_2026_11_17_18_13_26_CATALOGO_FRM21/MSys_TB99_LINK.mdb
+ create mode 100644 OBJECT/HTML/HELP/Msys_TB99_LINK_FrmS06_HELP_00_INDICE.html
+ create mode 100644 OBJECT/HTML/HELP/Msys_TB99_LINK_FrmS06_HELP_01_FILTRI.html
+ create mode 100644 OBJECT/HTML/HELP/Msys_TB99_LINK_FrmS06_HELP_02_ATTIVA_TUTTE.html
+ create mode 100644 OBJECT/HTML/HELP/Msys_TB99_LINK_FrmS06_HELP_03_DISATTIVA.html
+ create mode 100644 OBJECT/HTML/HELP/Msys_TB99_LINK_FrmS06_HELP_04_SOLO_GE.html
+ create mode 100644 OBJECT/HTML/HELP/Msys_TB99_LINK_FrmS06_HELP_05_SIMULA.html
+ create mode 100644 OBJECT/HTML/HELP/Msys_TB99_LINK_FrmS06_HELP_06_CREA_LINK.html
+ create mode 100644 OBJECT/HTML/HELP/Msys_TB99_LINK_FrmS06_HELP_07_STAMPA.html
+ create mode 100644 OBJECT/HTML/HELP/Msys_TB99_LINK_FrmS06_HELP_08_RIEPILOGO.html
+ create mode 100644 OBJECT/HTML/HELP/Msys_TB99_LINK_FrmS06_HELP_09_AIUTO.html
+ create mode 100644 OBJECT/HTML/HELP/Msys_TB99_LINK_FrmS06_HELP_10_ESITI.html
+ create mode 100644 OBJECT/HTML/HELP/Msys_TB99_LINK_FrmS06_HELP_stile.css
+    ESITO: OK
+
+=== 2c) CONTROLLO MAIN SVUOTATO su GitHub   [22:11:16]
+    COMANDO: git fetch origin
+From https://github.com/icivixwalter/MSys_TB99_LINK
+   3caef14..66c7e53  main       -> origin/main
+    ESITO: OK
+
+=== 3) PULL da GitHub   [22:11:19]
+    COMANDO: git pull --no-edit
+warning: in the working copy of 'git_LOG.txt', LF will be replaced by CRLF the next time Git touches it
+warning: Cannot merge binary files: MDB/MSys_TB99_LINK.mdb (HEAD vs. 66c7e538db52002e8038a06fbf36aadcfe1a5b87)
+Auto-merging MDB/MSys_TB99_LINK.mdb
+CONFLICT (content): Merge conflict in MDB/MSys_TB99_LINK.mdb
+CONFLICT (modify/delete): git_LOG.txt deleted in 66c7e538db52002e8038a06fbf36aadcfe1a5b87 and modified in HEAD.  Version HEAD of git_LOG.txt left in tree.
+Automatic merge failed; fix conflicts and then commit the result.
+    ESITO: ERRORE - codice 1
+
+################################################################
+### ESITO FINALE: *** ERRORE *** operazione interrotta
+### Leggere sopra il comando con ESITO: ERRORE
+### FINE  21/11/2026  22:11:21
+################################################################
+
+################################################################
+### INIZIO  21/11/2026  22:15:01
+### PC: FABI-50-54   UTENTE: walter.rossi
+### REPOSITORY: c:\CASA\LINGUAGGI\ACCESS\PROGETTI_MDB\MSYS\MSys_TB99_LINK
+################################################################
+
+=== 0) CONTROLLO REPOSITORY   [22:15:01]
+    COMANDO: git rev-parse --show-toplevel
+C:/CASA/LINGUAGGI/ACCESS/PROGETTI_MDB/MSYS/MSys_TB99_LINK
+    ESITO: OK
+
+=== 0b) PROTEZIONE .gitignore - resta sul PC e negli zip, MAI su GitHub   [22:15:01]
+    .gitignore escluso da git: OK
+
+=== 1) STATUS   [22:15:01]
+    COMANDO: git status -s
+D  LOGS/20260607_160625_TB99_Link_Rebuild_Log.txt
+D  LOGS/20260607_161512_TB99_Link_Rebuild_Log.txt
+D  LOGS/20260607_183325_DELETE_LINKS_TB99_Link_Rebuild_Log.txt
+D  LOGS/20260607_183821_DELETE_LINKS_TB99_Link_Rebuild_Log.txt
+D  LOGS/20260607_184051_DELETE_LINKS_TB99_Link_Rebuild_Log.txt
+D  LOGS/20260607_190955_DELETE_LINKS_TB99_Link_Rebuild_Log.txt
+D  LOGS/20260607_191004_TB99_Link_Rebuild_Log.txt
+D  LOGS/20260607_191041_DELETE_LINKS_TB99_Link_Rebuild_Log.txt
+D  LOGS/20260607_191048_TB99_Link_Rebuild_Log.txt
+D  MDB/LOGS/20260728_181149_TB99_Link_Rebuild_Log.txt
+D  MDB/LOGS/20260728_181645_TB99_Link_Rebuild_Log.txt
+D  MDB/LOGS/20261115_090352_TB99_Invio_Link_FrontEnd_Log.txt
+D  MDB/LOGS/20261115_090353_TB99_Invio_Link_FrontEnd_Log.txt
+D  MDB/LOGS/20261115_090355_TB99_Invio_Link_FrontEnd_Log.txt
+D  MDB/LOGS/20261115_090429_TB99_Invio_Link_FrontEnd_Log.txt
+D  MDB/LOGS/20261115_090448_TB99_Invio_Link_FrontEnd_Log.txt
+D  MDB/LOGS/20261115_210954_TB99_Invio_Link_FrontEnd_Log.txt
+D  MDB/LOGS/20261115_214628_TB99_Invio_Link_FrontEnd_Log.txt
+D  MDB/LOGS/20261115_215242_TB99_Invio_Link_FrontEnd_Log.txt
+D  MDB/LOGS/20261115_215302_TB99_Invio_Link_FrontEnd_Log.txt
+D  MDB/LOGS/20261115_215339_TB99_Invio_Link_FrontEnd_Log.txt
+D  MDB/LOGS/20261115_221741_TB99_Invio_Link_FrontEnd_Log.txt
+D  MDB/LOGS/20261115_221745_TB99_Invio_Link_FrontEnd_Log.txt
+D  MDB/LOGS/20261115_221750_TB99_Invio_Link_FrontEnd_Log.txt
+D  MDB/LOGS/IMPORTA_NOMI_LOG_20260614_174133.txt
+D  MDB/LOGS/IMPORTA_NOMI_LOG_20260614_174155.txt
+D  MDB/LOGS/IMPORTA_NOMI_LOG_20260614_174730.txt
+D  MDB/LOGS/IMPORTA_NOMI_LOG_20260614_174949.txt
+D  MDB/LOGS/IMPORTA_NOMI_LOG_20260614_175854.txt
+D  MDB/LOGS/IMPORTA_NOMI_LOG_20260614_180228.txt
+D  MDB/LOGS/IMPORTA_NOMI_LOG_20260614_180310.txt
+D  MDB/LOGS/IMPORTA_NOMI_LOG_20260614_180451.txt
+D  MDB/LOGS/IMPORTA_NOMI_LOG_20260614_181527.txt
+D  MDB/LOGS/IMPORTA_NOMI_LOG_20260614_184450.txt
+D  MDB/LOGS/IMPORTA_NOMI_LOG_20260614_184551.txt
+D  MDB/LOGS/IMPORTA_NOMI_LOG_20260614_185031.txt
+D  MDB/LOGS/LogErrori.txt
+D  MDB/LOGS/LogEventi.txt
+D  MDB/LOGS/LogInfo.txt
+D  MDB/LOGS/TB99_IMPORTA_OGGETTI_20261117_212126.txt
+D  MDB/LOGS/TB99_IMPORTA_OGGETTI_20261117_212151.txt
+UU MDB/MSys_TB99_LINK.mdb
+D  ZIP_7ZIP_INCREMENTALE_FILE_LOG.TXT
+UD git_LOG.txt
+    ESITO: OK
+
+=== 2a) ADD di tutte le modifiche   [22:15:02]
+    COMANDO: git add -A
