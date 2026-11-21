@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="it"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gli esiti: cosa significano e cosa fare - TB99 invio link</title><link rel="stylesheet" href="Msys_TB99_LINK_FrmS06_HELP_stile.css"></head>
+<body><header><h1>Gli esiti: cosa significano e cosa fare</h1><p>Form <b>Msys_TB99_LINK_FrmS06_INVIA_LINK</b> - database MSys_TB99_LINK - catalogo TB99_LINK</p></header>
+<nav><a href="Msys_TB99_LINK_FrmS06_HELP_00_INDICE.html">Indice</a><a href="Msys_TB99_LINK_FrmS06_HELP_01_FILTRI.html">Destinazione e filtri</a><a href="Msys_TB99_LINK_FrmS06_HELP_02_ATTIVA_TUTTE.html">Attiva tutte</a><a href="Msys_TB99_LINK_FrmS06_HELP_03_DISATTIVA.html">Disattiva tutte</a><a href="Msys_TB99_LINK_FrmS06_HELP_04_SOLO_GE.html">Solo front end GE_</a><a href="Msys_TB99_LINK_FrmS06_HELP_05_SIMULA.html">1) SIMULA</a><a href="Msys_TB99_LINK_FrmS06_HELP_06_CREA_LINK.html">2) CREA I LINK</a><a href="Msys_TB99_LINK_FrmS06_HELP_07_STAMPA.html">Stampa report</a><a href="Msys_TB99_LINK_FrmS06_HELP_08_RIEPILOGO.html">Riepilogo</a><a href="Msys_TB99_LINK_FrmS06_HELP_09_AIUTO.html">? Aiuto</a><a href="Msys_TB99_LINK_FrmS06_HELP_10_ESITI.html" class="qui">Esiti</a></nav><main>
+<p>L'esito di ogni riga e' nella colonna <b>Esito</b> dell'elenco e nel report. In verde gli esiti buoni, in rosso quelli da controllare.</p>
+<table><tr><th>Esito</th><th>Significato</th><th>Cosa fare</th></tr>
+<tr><td>DA_INVIARE</td><td>riga non ancora simulata ne' inviata</td><td>premere 1) SIMULA</td></tr>
+<tr><td class="v">SIMULA_CREATO</td><td>il link verrebbe creato</td><td>niente: verra' creato con 2) CREA I LINK</td></tr>
+<tr><td class="v">SIMULA_SOVRASCRITTO</td><td>il link c'e' gia' e verrebbe rifatto; la nota dice dove punta oggi</td><td>niente: verra' ricreato sul database madre giusto</td></tr>
+<tr><td class="v">CREATO</td><td>link creato</td><td>-</td></tr>
+<tr><td class="v">SOVRASCRITTO</td><td>link ricreato</td><td>-</td></tr>
+<tr><td class="r">TABELLA_LOCALE</td><td>nel database di destinazione c'e' una tabella vera con lo stesso nome: non viene toccata</td><td>decidere a mano se la tabella locale va tenuta; altrimenti disattivare la riga</td></tr>
+<tr><td class="r">SORGENTE</td><td>la destinazione e' il database madre della tabella: niente link</td><td>disattivare la riga</td></tr>
+<tr><td class="r">NON_A_CATALOGO</td><td>la tabella non c'e' in <code>Msys_TB99_LINK</code></td><td>aggiungerla al catalogo o disattivare la riga</td></tr>
+<tr><td class="r">CATALOGO_NON_OK</td><td>il database madre e' fuori dall'radice C:\CASA\...\MSYS oppure Verifica_s non e' OK</td><td>correggere il database madre nel catalogo o disattivare la riga</td></tr>
+<tr><td class="r">SORGENTE_MANCANTE</td><td>il database madre o la tabella madre non si trovano</td><td>controllare il percorso nel catalogo</td></tr>
+<tr><td class="r">FE_MANCANTE</td><td>il database di destinazione non esiste</td><td>controllare il percorso in PATH_DB</td></tr>
+<tr><td class="r">FE_NON_VALIDO</td><td>destinazione fuori dall'radice C:\CASA\...\MSYS o uguale a questo database</td><td>disattivare la riga</td></tr>
+<tr><td class="r">FE_NON_APRIBILE</td><td>destinazione bloccata (aperta da qualcuno) o danneggiata</td><td>chiuderla e rifare la simulazione</td></tr>
+<tr><td class="r">ERRORE</td><td>errore imprevisto</td><td>leggere la nota e il log nella cartella LOGS</td></tr>
+</table>
+</main>
+<footer>Guida della form S06 - versione 1.0 del 21/11/2026 - cartella MSys_TB99_LINK\OBJECT\HTML\HELP</footer></body></html>
