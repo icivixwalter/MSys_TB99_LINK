@@ -1,4 +1,3 @@
-Attribute VB_Name = "Msys_TB99_LINK_ Mdl01_RICOSTRUICI_LINK_TABELLE"
 Option Compare Database
 Option Explicit
 
@@ -807,37 +806,20 @@ Public Function CancellaTuttiLinkEsistenti_PFunct() As Boolean
     End If
     
     '======================================================================
-    ' 21_05[CREATE_LOGGER] = Tenta di creare istanza della classe logger
+    ' 21_05[CREATE_LOGGER] = Istanza della classe log unica MSys_TB12_Cls01_LOG
+    '                       file: LOGS\DELETE_LINKS_<data_ora>_INFO_<giorno>.txt (+ _ERRORI_ se ci sono errori)
     '======================================================================
-    On Error Resume Next
-    Set logger = CreateObject("Msys_TB12_FILES_CLASSE_clsLogger")
-    If logger Is Nothing Then
-        Set logger = New Msys_TB12_FILES_CLASSE_clsLogger
-    End If
-    If logger Is Nothing Then
-        Set logger = CreateObject("clsLogger")
-    End If
-    If logger Is Nothing Then
-        Set logger = New Msys_TB12_FILES_CLASSE_clsLogger
-    End If
-    On Error GoTo ErrorHandler
-    
+    Set logger = New MSys_TB12_Cls01_LOG
+    logger.CartellaLog = dbFolder & "\LOGS"
+    logger.NomeBase = Replace(logFileName, ".txt", "")
+    logger.origine = "Mdl01_RICOSTRUICI_LINK_TABELLE"
+    logger.ScriviAVideo = False          ' il Debug.Print lo fa gia WriteLogMessage
+    logFilePath = logger.PercorsoFile("INFO")
+
     '======================================================================
-    ' 21_06[CHECK_LOGGER] = Verifica se il logger è stato creato
+    ' 21_06[CHECK_LOGGER] = Logger pronto
     '======================================================================
-    If logger Is Nothing Then
-        logEnabled = False
-        Debug.Print "ATTENZIONE: Logger non disponibile. Uso solo Debug.Print"
-    Else
-        logEnabled = True
-        On Error Resume Next
-        logger.filePath = logFilePath
-        logger.LogToFile = True
-        logger.LogToDebug = True
-        logger.LogLevel = 1
-        logger.InitLogger
-        On Error GoTo ErrorHandler
-    End If
+    logEnabled = True
     
     '======================================================================
     ' 21_07[WRITE_HEADER] = Scrive intestazione nel log
@@ -875,12 +857,6 @@ Public Function CancellaTuttiLinkEsistenti_PFunct() As Boolean
               "Procedere-", vbYesNo + vbExclamation) = vbNo Then
         Call WriteLogMessage(logger, logEnabled, "[UTENTE] Operazione ANNULLATA dall'utente.", 1)
         Call WriteLogMessage(logger, logEnabled, "[FINE] Log chiuso.", 1)
-        
-        If logEnabled Then
-            On Error Resume Next
-            logger.CloseLogger
-            On Error GoTo 0
-        End If
         
         Set logger = Nothing
         Set fso = Nothing
@@ -997,12 +973,6 @@ NextRecord:
     '======================================================================
     Call WriteLogMessage(logger, logEnabled, "[CHIUSURA] File di log salvato in: " & logFilePath, 1)
     
-    If logEnabled Then
-        On Error Resume Next
-        logger.CloseLogger
-        On Error GoTo 0
-    End If
-    
     Set logger = Nothing
     
     '======================================================================
@@ -1042,11 +1012,6 @@ ErrorHandler:
     Set db = Nothing
     Set fso = Nothing
     
-    If logEnabled Then
-        On Error Resume Next
-        logger.CloseLogger
-        On Error GoTo 0
-    End If
     Set logger = Nothing
     
     MsgBox errorMsg, vbCritical
@@ -1260,32 +1225,20 @@ End Function
 '======================================================================
 
 Private Sub WriteLogMessage(ByVal logger As Object, ByVal logEnabled As Boolean, ByVal Message As String, ByVal level As Integer)
-    
+    ' livelli usati nel modulo: 1 = messaggio normale, 2 = avviso, 3 = errore
+    ' errore -> file ERRORI + copia nel file INFO (classe MSys_TB12_Cls01_LOG, metodo Scrivi #03.01#)
+
     ' Scrive sempre su Debug
     Debug.Print Message
-    
-    ' Se il logger è attivo, scrive anche sul log
+
     If logEnabled And Not logger Is Nothing Then
         On Error Resume Next
-        
-        '  Questi metodi ESISTONO nella classe!
         Select Case level
-            Case 1  ' ERRORE
-                logger.ScriviLogErrore "WriteLogMessage", 0, Message, 0
-            Case 2  ' INFO
-                logger.ScriviInfo "WriteLogMessage", Message
-            Case 3  ' EVENTO
-                logger.ScriviLogEvento "WriteLogMessage", Message
-            Case Else  ' DEFAULT
-                logger.ScriviInfo "WriteLogMessage", Message
+            Case 2:    logger.Scrivi "CancellaTuttiLinkEsistenti_PFunct", "-", "AVVISO", Message
+            Case 3:    logger.Scrivi "CancellaTuttiLinkEsistenti_PFunct", "-", "ERRORE", Message
+            Case Else: logger.Scrivi "CancellaTuttiLinkEsistenti_PFunct", "-", "INFO", Message
         End Select
-        
-        ' Fallback se tutto fallisce
-        If Err.Number <> 0 Then
-            Err.Clear
-            logger.ScriviLogPersonalizzato "WriteLogMessage", Message, "LogGenerico.txt"
-        End If
         On Error GoTo 0
     End If
-    
+
 End Sub

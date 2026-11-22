@@ -46,7 +46,9 @@
 @REM  07.00b RIGENERA LA LISTA FILE (Zip_N70_CREA_ElencoFile.bat): la lista
 @REM         segue sempre il contenuto della cartella, compresi .git e .gitignore
 @REM  07.01  POSIZIONAMENTO IN PATH_PART_S E CONTROLLO LISTA FILE
+@REM  07.01b TOGLIE DALLO ZIP DEL GIORNO LE CARTELLE ESCLUSE (BACKUP*) GIA' PRESENTI
 @REM  07.02  COMANDO 7ZIP u -tzip -r CON GESTIONE ERRORLEVEL (0 OK, 1 WARNING NOTO, >=2 ERRORE)
+@REM         ESCLUDE IN OGNI SOTTOCARTELLA LE CARTELLE ESCLUSI_7Z_S (es. MDB\BACKUP_CLAUDE_*)
 @REM  07.03  CONTROLLO CONTENUTO CARTELLA DESTINAZIONE
 @REM  07.04  COMANDO 7ZIP l PER ESPORTARE LISTA CONTENUTO ARCHIVIO (CON .zip ESPLICITO)
 @REM
@@ -117,6 +119,9 @@
 @SET "PATH_DEST_S=%PATH_PART_S%\%CARTELLA_SALVATAGGI_S%"
 @SET "FILE_S=ZIP_SALVATAGGI_MSys_TB99_LINK"
 @SET "LISTA_FILE_S=Zip_N70_ElencoFile.txt"
+@REM  cartelle (e file) da NON mettere nello zip, a qualsiasi livello: i backup di MDB
+@REM  (BACKUP_CLAUDE_* ecc.) restano solo sul PC. Un solo modello 7-Zip, senza il punto esclamativo.
+@SET "ESCLUSI_7Z_S=BACKUP*"
 
 @CALL :LOG "PARAMETRI GLOBALI IMPOSTATI:"
 @CALL :LOG "  t                     = %t%"
@@ -125,6 +130,7 @@
 @CALL :LOG "  PATH_DEST_S           = %PATH_DEST_S%"
 @CALL :LOG "  FILE_S                = %FILE_S%"
 @CALL :LOG "  LISTA_FILE_S          = %LISTA_FILE_S%"
+@CALL :LOG "  ESCLUSI_7Z_S          = %ESCLUSI_7Z_S%"
 
 @REM ================================================================================================
 @REM  01.00  CREAZIONE CARTELLA SALVATAGGI (PATH ASSOLUTO)
@@ -375,9 +381,25 @@
 @REM           1 = WARNING noto (tipico: righe // commento nella lista), archivio valido
 @REM          >=2 = ERRORE reale, interrompo il bat
 @REM ================================================================================================
-@CALL :LOG "07.02 - Eseguo: 7z u -tzip -r \"%OUT_ZIP%\" @%LISTA_FILE_S%"
-"C:\Program Files\7-Zip\7z.exe" u -tzip -r "%OUT_ZIP%" "@%LISTA_FILE_S%" >>"%ZIP_7ZIP_INCREMENTALE_FILE_LOG%" 2>&1
-@SET "RC7Z=%ERRORLEVEL%"
+@REM ------------------------------------------------------------------------------------------------
+@REM  07.01b / 07.02  BLOCCO SENZA DELAYED EXPANSION
+@REM         Il filtro 7-Zip di esclusione si scrive  -xr + punto esclamativo + modello: con
+@REM         ENABLEDELAYEDEXPANSION attiva il punto esclamativo verrebbe cancellato, quindi i due
+@REM         comandi 7-Zip girano in un SETLOCAL DISABLEDELAYEDEXPANSION e i codici di uscita
+@REM         escono con  ENDLOCAL & SET.
+@REM  07.01b Se lo zip del giorno esiste gia' (salvataggio precedente di oggi) e contiene cartelle
+@REM         BACKUP*, le toglie (7z d -r): l'aggiornamento u da solo non le cancellerebbe.
+@REM ------------------------------------------------------------------------------------------------
+@CALL :LOG "07.01b - Tolgo dallo zip del giorno (se esiste) le voci %ESCLUSI_7Z_S%"
+@CALL :LOG "07.02 - Eseguo: 7z u -tzip -r \"%OUT_ZIP%\" @%LISTA_FILE_S% escludendo %ESCLUSI_7Z_S%"
+@SETLOCAL DISABLEDELAYEDEXPANSION
+@SET "RC7ZD_TMP=-"
+@IF EXIST "%OUT_ZIP%.zip" "C:\Program Files\7-Zip\7z.exe" d "%OUT_ZIP%.zip" -r "%ESCLUSI_7Z_S%" >>"%ZIP_7ZIP_INCREMENTALE_FILE_LOG%" 2>&1
+@IF EXIST "%OUT_ZIP%.zip" SET "RC7ZD_TMP=%ERRORLEVEL%"
+"C:\Program Files\7-Zip\7z.exe" u -tzip -r "%OUT_ZIP%" "@%LISTA_FILE_S%" "-xr!%ESCLUSI_7Z_S%" >>"%ZIP_7ZIP_INCREMENTALE_FILE_LOG%" 2>&1
+@SET "RC7Z_TMP=%ERRORLEVEL%"
+@ENDLOCAL & SET "RC7Z=%RC7Z_TMP%" & SET "RC7ZD=%RC7ZD_TMP%"
+@CALL :LOG "07.01b - 7z d (pulizia %ESCLUSI_7Z_S%) ERRORLEVEL=%RC7ZD%  (- = zip del giorno non ancora presente)"
 
 @IF %RC7Z% GEQ 2 (
     @CALL :LOG "07.02 - ERRORE 7-Zip! ERRORLEVEL=%RC7Z%"

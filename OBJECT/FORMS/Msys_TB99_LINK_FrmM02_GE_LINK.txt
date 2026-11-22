@@ -1,6 +1,6 @@
 Version =19
 VersionRequired =19
-Checksum =-234827606
+Checksum =-444997805
 Begin Form
     RecordSelectors = NotDefault
     NavigationButtons = NotDefault
@@ -11,9 +11,12 @@ Begin Form
     PictureAlignment =2
     DatasheetGridlinesBehavior =3
     GridY =10
-    Width =17566
+    Width =19452
     DatasheetFontHeight =11
-    ItemSuffix =25
+    ItemSuffix =26
+    Top =480
+    Right =8604
+    Bottom =6432
     DatasheetGridlinesColor =15062992
     RecSrcDt = Begin
         0xdf208241bfa0e640
@@ -33,7 +36,7 @@ Begin Form
         0xa15e57c1ecb51a16010000007557b13abea0e64000000000000000004d007300 ,
         0x790073005f0054004200390039005f004c0049004e004b005f00460072006d00 ,
         0x5300300033005f004f004700470045005400540049000000000000004f52e53c ,
-        0xfe074a42bdd31a20642c8a0e000000002d5e40e7bda0e6400000000000000000 ,
+        0xfe074a42bdd31a20642c8a0e000000001a659a0f35a1e6400000000000000000 ,
         0x4d007300790073005f0054004200390039005f004c0049004e004b005f004f00 ,
         0x62006a00650063007400000000000000709dc18c403d0e42be1d534be3e2bd5f ,
         0x070000004f52e53cfe074a42bdd31a20642c8a0e5400490050004f005f004f00 ,
@@ -45,15 +48,15 @@ Begin Form
         0x0000e30e733abea0e64000000000000000004d007300790073005f0054004200 ,
         0x390039005f004c0049004e004b005f00460072006d005300300034005f005000 ,
         0x4100540048005f004400420000000000000041de69bcb44f7545b8a9648ca122 ,
-        0xca1e000000001a9640e7bda0e64000000000000000004d007300790073005f00 ,
+        0xca1e000000009a787d127da1e64000000000000000004d007300790073005f00 ,
         0x54004200390039005f004c0049004e004b005f0050004100540048005f004400 ,
         0x42000000000000001b9910b3c1ae964296611b693e25cf310700000041de69bc ,
         0xb44f7545b8a9648ca122ca1e440061007400610062006100730065005f007300 ,
         0x00000000000003bbbd6208039341a271b78073cc170d0700000041de69bcb44f ,
         0x7545b8a9648ca122ca1e44006100740061006200610073006500000000000000 ,
         0x6fb20201030e37408282b3193ef83b950700000041de69bcb44f7545b8a9648c ,
-        0xa122ca1e490044005f004f0042004a0000000000000032c25883971a174f853d ,
-        0x1fff8ed28d1c01000000c27f1c41bfa0e6400000000000000000550054004900 ,
+        0xa122ca1e490044005f004f0042004a00000000000000949a5c6ce2f0884a9ff4 ,
+        0x6b5b4555f5520100000069db43d590a1e6400000000000000000550054004900 ,
         0x4c004900540041005f004d007300790073005f00460072006d00320031005f00 ,
         0x49004d0050004f005200540041005f004f004700470045005400540049000000 ,
         0x00000000000000000000000000000000000000000c0000000500000000000000 ,
@@ -61,6 +64,186 @@ Begin Form
     End
     Caption ="TB99 - Catalogo dei collegamenti"
     DatasheetFontName ="Calibri"
+    PrtMip = Begin
+        0x6801000068010000680100006801000000000000201c0000e010000001000000 ,
+        0x010000006801000000000000a10700000100000001000000
+    End
+    PrtDevMode = Begin
+        0x0001feed0600000030ed20f729010000000000000000000090fffded06000000 ,
+        0x010403069c005814032d0100010009009a0b3408640001000f00580202000100 ,
+        0x58020300010041340000000000000000e0c72df7290100000d970a2cfa7f0000 ,
+        0x30fbfffff0040000000000000000000000000000010000000000000001000000 ,
+        0x0200000001000000ffffffff4749533400000000000000000000000044494e55 ,
+        0x2200d0002c032c11e25e8d530000000000000000000000000000000000000000 ,
+        0x0000000000000000050000000000190001000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000100000000000000000000000000000000000000 ,
+        0x000000000000000000000000000000000000000000000000d0000000534d544a ,
+        0x000000001000c0007b00300038003400460030003100460041002d0045003600 ,
+        0x330034002d0034004400370037002d0038003300450045002d00300037003400 ,
+        0x3800310037004300300033003500380031007d000000524553444c4c00556e69 ,
+        0x726573444c4c00506170657253697a65004134004f7269656e746174696f6e00 ,
+        0x504f525452414954005265736f6c7574696f6e005265734f7074696f6e310043 ,
+        0x6f6c6f724d6f646500436f6c6f72000000000000000000000000000000000000 ,
+        0x00000000000000002c1100005634444d01000000000000009c0a70221c000000 ,
+        0xec00000003000000fa014f0834e6774d83ee074817c03581d00000004c000000 ,
+        0x0300000000080000000000000000000003000000000800002a00000000080000 ,
+        0x0300000040000000560000000010000044006f00630075006d0065006e007400 ,
+        0x5500730065007200500061007300730077006f0072006400000044006f006300 ,
+        0x75006d0065006e0074004f0077006e0065007200500061007300730077006f00 ,
+        0x72006400000044006f00630075006d0065006e00740043007200790070007400 ,
+        0x5300650063007500720069007400790000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+        0x0000000000000000000000000000000000000000
+    End
+    PrtDevNames = Begin
+        0x08001f0036000100000000000000000000000000000000000000000000000000 ,
+        0x00000000000000000000000000000000000000000000504f525450524f4d5054 ,
+        0x3a0000000000000000000000000000000000
+    End
+    OnResize ="[Event Procedure]"
     OnLoad ="[Event Procedure]"
     NoSaveCTIWhenDisabled =1
     Begin
@@ -111,7 +294,7 @@ Begin Form
             BorderColor =13750737
         End
         Begin FormHeader
-            Height =520
+            Height =460
             BackColor =15783096
             Name ="IntestazioneMaschera"
             GUID = Begin
@@ -132,42 +315,14 @@ Begin Form
                         0x3cff899ec76ff945b712e1661789eca4
                     End
                 End
-                Begin CommandButton
-                    OverlapFlags =93
-                    Left =8800
-                    Top =60
-                    Width =3300
-                    Height =400
-                    Name ="Cmd_Pg01"
-                    Caption ="1 - COLLEGAMENTI"
-                    OnClick ="[Event Procedure]"
-                    GUID = Begin
-                        0xb41e4f9dd36a884fab49785c62574dc8
-                    End
-                End
-                Begin CommandButton
-                    OverlapFlags =215
-                    Left =8800
-                    Top =60
-                    Width =3300
-                    Height =400
-                    TabIndex =1
-                    Name ="Cmd_Pg02"
-                    Caption ="2 - IMPORTA OGGETTI"
-                    OnClick ="[Event Procedure]"
-                    GUID = Begin
-                        0x0abef37c1b7cd94b9c43047c001fbf31
-                    End
-                End
                 Begin TextBox
                     Visible = NotDefault
                     OverlapFlags =85
                     IMESentenceMode =3
-                    Left =15700
+                    Left =13684
                     Top =60
-                    Width =700
+                    Width =2716
                     Height =300
-                    TabIndex =2
                     Name ="TXT_NAME"
                     ControlSource ="=[SottoForm_LINK].[Form]![Name_TXT]"
                     GUID = Begin
@@ -182,17 +337,34 @@ Begin Form
                     Top =60
                     Width =700
                     Height =300
-                    TabIndex =3
+                    TabIndex =1
                     Name ="TXT_ID_OBJ"
                     ControlSource ="=[SottoForm_OGGETTI].[Form]![ID_OBJ_TXT]"
                     GUID = Begin
                         0x71917202e9887547be4bfc0f78c9f934
                     End
                 End
+                Begin CommandButton
+                    OverlapFlags =85
+                    Left =18700
+                    Top =60
+                    Width =600
+                    Height =340
+                    FontSize =12
+                    FontWeight =700
+                    TabIndex =2
+                    Name ="Cmd_HELP"
+                    Caption ="?"
+                    OnClick ="[Event Procedure]"
+                    ControlTipText ="Help della linguetta attiva (pagina HTML)"
+                    GUID = Begin
+                        0x347ef6472b83cd488d78305713768a3e
+                    End
+                End
             End
         End
         Begin Section
-            Height =7995
+            Height =8520
             Name ="Corpo"
             GUID = Begin
                 0xe8d923b806ac3b44b4513ac947908b1a
@@ -200,19 +372,22 @@ Begin Form
             Begin
                 Begin Tab
                     OverlapFlags =85
-                    Style =2
-                    Width =17536
-                    Height =7968
+                    Left =60
+                    Width =19332
+                    Height =8460
+                    FontWeight =700
+                    TabFixedHeight =400
                     Name ="TabCtl_01"
+                    OnChange ="[Event Procedure]"
                     GUID = Begin
                         0x531024c76535b943aedf2a7d7b182cac
                     End
                     Begin
                         Begin Page
                             OverlapFlags =87
-                            Left =60
-                            Top =60
-                            Width =17416
+                            Left =168
+                            Top =504
+                            Width =19116
                             Height =7848
                             Name ="Pg_01"
                             Caption ="COLLEGAMENTI"
@@ -222,23 +397,24 @@ Begin Form
                             Begin
                                 Begin Label
                                     OverlapFlags =215
-                                    Left =60
-                                    Top =60
-                                    Width =8505
+                                    Left =228
+                                    Top =564
+                                    Width =9500
                                     Height =300
                                     FontWeight =700
                                     Name ="LBL_LINK"
-                                    Caption ="1 - TABELLE COLLEGATE (con oggetti nel loro database)"
+                                    Caption ="1 - TABELLE COLLEGATE (con oggetti nel loro database) (Msys_TB99_LINK_FrmS05_LIN"
+                                        "K)"
                                     GUID = Begin
                                         0x07920e2a195bcf47a240c80dd11e4515
                                     End
                                 End
                                 Begin Subform
                                     OverlapFlags =215
-                                    Left =60
-                                    Top =390
-                                    Width =17416
-                                    Height =3800
+                                    Left =228
+                                    Top =894
+                                    Width =18996
+                                    Height =3629
                                     Name ="SottoForm_LINK"
                                     SourceObject ="Form.Msys_TB99_LINK_FrmS05_LINK"
                                     GUID = Begin
@@ -247,23 +423,23 @@ Begin Form
                                 End
                                 Begin Label
                                     OverlapFlags =215
-                                    Left =60
-                                    Top =4390
-                                    Width =8505
+                                    Left =228
+                                    Top =4613
+                                    Width =9468
                                     Height =300
                                     FontWeight =700
                                     Name ="LBL_OGGETTI"
-                                    Caption ="2 - OGGETTI della tabella selezionata"
+                                    Caption ="2 - OGGETTI della tabella selezionata (Msys_TB99_LINK_FrmS03_OGGETTI)"
                                     GUID = Begin
                                         0x5bca62185fa17c4baac61200beb379cd
                                     End
                                 End
                                 Begin Subform
                                     OverlapFlags =215
-                                    Left =60
-                                    Top =4720
-                                    Width =9579
-                                    Height =3185
+                                    Left =228
+                                    Top =4943
+                                    Width =9468
+                                    Height =3349
                                     Name ="SottoForm_OGGETTI"
                                     SourceObject ="Form.Msys_TB99_LINK_FrmS03_OGGETTI"
                                     LinkChildFields ="Name"
@@ -274,23 +450,23 @@ Begin Form
                                 End
                                 Begin Label
                                     OverlapFlags =215
-                                    Left =9839
-                                    Top =4390
-                                    Width =6804
+                                    Left =9756
+                                    Top =4613
+                                    Width =9468
                                     Height =300
                                     FontWeight =700
                                     Name ="LBL_PATH_DB"
-                                    Caption ="3 - DESTINAZIONI dell'oggetto selezionato"
+                                    Caption ="3 - DESTINAZIONI dell'oggetto selezionato (Msys_TB99_LINK_FrmS04_PATH_DB)"
                                     GUID = Begin
                                         0x79873d41c7ea1148816c1439fabb4951
                                     End
                                 End
                                 Begin Subform
                                     OverlapFlags =215
-                                    Left =9839
-                                    Top =4720
-                                    Width =7637
-                                    Height =3185
+                                    Left =9756
+                                    Top =4943
+                                    Width =9468
+                                    Height =3349
                                     Name ="SottoForm_PATH_DB"
                                     SourceObject ="Form.Msys_TB99_LINK_FrmS04_PATH_DB"
                                     LinkChildFields ="ID_OBJ"
@@ -303,9 +479,9 @@ Begin Form
                         End
                         Begin Page
                             OverlapFlags =215
-                            Left =60
-                            Top =60
-                            Width =17416
+                            Left =168
+                            Top =504
+                            Width =19116
                             Height =7848
                             Name ="Pg_02"
                             Caption ="IMPORTA OGGETTI"
@@ -316,10 +492,10 @@ Begin Form
                                 Begin Subform
                                     OverlapFlags =247
                                     OldBorderStyle =0
-                                    Left =60
-                                    Top =60
-                                    Width =17416
-                                    Height =7845
+                                    Left =168
+                                    Top =504
+                                    Width =19116
+                                    Height =7848
                                     Name ="SottoForm_IMPORTA"
                                     SourceObject ="Form.UTILITA_Msys_Frm21_IMPORTA_OGGETTI"
                                     GUID = Begin
@@ -331,9 +507,9 @@ Begin Form
                         Begin Page
                             Visible = NotDefault
                             OverlapFlags =215
-                            Left =60
-                            Top =60
-                            Width =17412
+                            Left =168
+                            Top =504
+                            Width =19116
                             Height =7848
                             Name ="Pg_03"
                             Caption ="PAGINA 03"
@@ -344,9 +520,9 @@ Begin Form
                         Begin Page
                             Visible = NotDefault
                             OverlapFlags =215
-                            Left =60
-                            Top =60
-                            Width =17412
+                            Left =168
+                            Top =504
+                            Width =19116
                             Height =7848
                             Name ="Pg_04"
                             Caption ="PAGINA 04"
@@ -357,9 +533,9 @@ Begin Form
                         Begin Page
                             Visible = NotDefault
                             OverlapFlags =215
-                            Left =60
-                            Top =60
-                            Width =17412
+                            Left =168
+                            Top =504
+                            Width =19116
                             Height =7848
                             Name ="Pg_05"
                             Caption ="PAGINA 05"
@@ -370,9 +546,9 @@ Begin Form
                         Begin Page
                             Visible = NotDefault
                             OverlapFlags =215
-                            Left =60
-                            Top =60
-                            Width =17412
+                            Left =168
+                            Top =504
+                            Width =19116
                             Height =7848
                             Name ="Pg_06"
                             Caption ="PAGINA 06"
@@ -383,9 +559,9 @@ Begin Form
                         Begin Page
                             Visible = NotDefault
                             OverlapFlags =215
-                            Left =60
-                            Top =60
-                            Width =17412
+                            Left =168
+                            Top =504
+                            Width =19116
                             Height =7848
                             Name ="Pg_07"
                             Caption ="PAGINA 07"
@@ -396,9 +572,9 @@ Begin Form
                         Begin Page
                             Visible = NotDefault
                             OverlapFlags =215
-                            Left =60
-                            Top =60
-                            Width =17412
+                            Left =168
+                            Top =504
+                            Width =19116
                             Height =7848
                             Name ="Pg_08"
                             Caption ="PAGINA 08"
@@ -409,9 +585,9 @@ Begin Form
                         Begin Page
                             Visible = NotDefault
                             OverlapFlags =215
-                            Left =60
-                            Top =60
-                            Width =17412
+                            Left =168
+                            Top =504
+                            Width =19116
                             Height =7848
                             Name ="Pg_09"
                             Caption ="PAGINA 09"
@@ -422,9 +598,9 @@ Begin Form
                         Begin Page
                             Visible = NotDefault
                             OverlapFlags =215
-                            Left =60
-                            Top =60
-                            Width =17412
+                            Left =168
+                            Top =504
+                            Width =19116
                             Height =7848
                             Name ="Pg_10"
                             Caption ="PAGINA 10"
@@ -435,9 +611,9 @@ Begin Form
                         Begin Page
                             Visible = NotDefault
                             OverlapFlags =215
-                            Left =60
-                            Top =60
-                            Width =17412
+                            Left =168
+                            Top =504
+                            Width =19116
                             Height =7848
                             Name ="Pg_11"
                             Caption ="PAGINA 11"
@@ -448,9 +624,9 @@ Begin Form
                         Begin Page
                             Visible = NotDefault
                             OverlapFlags =215
-                            Left =60
-                            Top =60
-                            Width =17412
+                            Left =168
+                            Top =504
+                            Width =19116
                             Height =7848
                             Name ="Pg_12"
                             Caption ="PAGINA 12"
@@ -477,48 +653,182 @@ Attribute VB_Creatable = True
 Attribute VB_PredeclaredId = True
 Attribute VB_Exposed = False
 Option Compare Database
-
+Option Explicit
 
 '==================================================================================================
 ' Msys_TB99_LINK_FrmM02_GE_LINK  -  catalogo TB99 (maschera contenitore, non associata)
-'   TabCtl_01 = 12 pagine, dimensionate sulla maschera UTILITA_Msys_Frm21_IMPORTA_OGGETTI
+'   TabCtl_01 = controllo struttura a schede con 12 pagine (linguette visibili: Pg_01 e Pg_02)
 '     Pg_01 COLLEGAMENTI     : catena delle 3 sottomaschere
 '        SottoForm_LINK     = Msys_TB99_LINK_FrmS05_LINK     (Msys_TB99_LINK)
 '        SottoForm_OGGETTI  = Msys_TB99_LINK_FrmS03_OGGETTI  (Msys_TB99_LINK_Object,  legame TXT_NAME   -> Name)
 '        SottoForm_PATH_DB  = Msys_TB99_LINK_FrmS04_PATH_DB  (Msys_TB99_LINK_PATH_DB, legame TXT_ID_OBJ -> ID_OBJ)
-'     Pg_02 IMPORTA OGGETTI  : SottoForm_IMPORTA = UTILITA_Msys_Frm21_IMPORTA_OGGETTI (a misura, senza bordo e barre)
-'     Pg_03..Pg_12           : nascoste (usi futuri)
-'   Le linguette sono i pulsanti Cmd_Pg01 / Cmd_Pg02 nell'intestazione, che resta sempre visibile:
-'   la maschera UTILITA e stata ridotta all'80% (17.416 x 7.845 twip) per stare senza barre di scorrimento.
-' #01# Form_Load   = apre sulla prima pagina con la catena allineata
-' #02# MostraPagina = attiva una pagina, evidenzia il suo pulsante e torna in alto a sinistra
-' #03# Cmd_Pg01_Click / Cmd_Pg02_Click = pulsanti-linguetta
+'     Pg_02 IMPORTA OGGETTI  : SottoForm_IMPORTA = UTILITA_Msys_Frm21_IMPORTA_OGGETTI (17.416 x 7.845 twip)
+'     Pg_03..Pg_12           : nascoste (usi futuri) - per usarle: Visible = True e UNA sottomaschera dentro
+'                              (la sottomaschera viene allargata da sola a tutta la pagina, vedi #05#)
+'   Cmd_HELP (intestazione, "?") = help HTML della linguetta attiva:
+'     OBJECT\HTML\FORM\Msys_TB99_LINK_FrmM02_GE_LINK\Msys_TB99_LINK_FrmM02_GE_LINK_HELP_<nn>_<CHIAVE>.html
+'     (si modificano i .md e si rigenerano con OBJECT\HTML\GENERA_HELP_HTML.bat ; modulo Mdl07_HELP)
+' #01# Form_Load        = misure di partenza, prima pagina e catena allineata
+' #02# TabCtl_01_Change = ad ogni selezione di pagina aggiorna le sottomaschere di quella pagina
+' #03# AggiornaPagina   = Pg_01 -> catena LINK/OGGETTI/PATH_DB ; Pg_02 -> SottoForm_IMPORTA ;
+'                         Pg_03..Pg_12 -> tutte le sottomaschere presenti nella pagina
+' #04# Cmd_HELP_Click   = apre l'help della linguetta attiva (Pg_01 -> 01, Pg_02 -> 02, altre -> indice 00)
+' #05# ADATTAMENTO ALLA FINESTRA (Form_Resize)
+'      #05.01# MisureIniziali = bordi tra tab e area delle pagine (letti da Pg_12, vuota)
+'      #05.02# AdattaLayout   = tab grande quanto la finestra, mai sotto la misura di progetto
+'                               (TAB_W_MIN x TAB_H_MIN): la Frm21 non viene mai tagliata.
+'                               Ordine: 1) maschera e tab al massimo tra vecchio e nuovo  2) pagine
+'                               3) tab, pulsante ? e maschera alla misura finale (cosi' nessun controllo
+'                               esce mai dal suo contenitore). ScrollBars = 0: nessuna barra.
+'      #05.03# DisponiPagine  = Pg_01: LINK in alto a tutta larghezza (52% dell'altezza), sotto
+'                               OGGETTI e PATH_DB affiancati; Pg_02..Pg_12: se la pagina ha UNA sola
+'                               sottomaschera, questa occupa tutta la pagina.
+'      #05.04# AdattaSottomaschera = se la form contenuta ha la procedura pubblica AdattaFinestra
+'                               (es. UTILITA_Msys_Frm21_IMPORTA_OGGETTI) la richiama: i suoi controlli
+'                               si allargano allo spazio della pagina.
 '==================================================================================================
+
+'//#05# misure (twip)
+Private Const TAB_W_MIN As Long = 19332     ' misura di progetto del tab: sotto non si scende
+Private Const TAB_H_MIN As Long = 8460
+Private Const MARG As Long = 60             ' margine tra finestra e tab, e dentro le pagine
+Private m_dxL As Long, m_dyT As Long, m_dxR As Long, m_dyB As Long
+Private m_TabL As Long, m_TabT As Long
+Private m_Pronto As Boolean
+
 Private Sub Form_Load()
-    '#01# prima pagina e catena allineata
+    '#01# misure di partenza, prima pagina e catena allineata
     On Error Resume Next
-    MostraPagina 0
-    Me!TXT_NAME.Requery
-    Me!SottoForm_OGGETTI.Requery
-    Me!TXT_ID_OBJ.Requery
-    Me!SottoForm_PATH_DB.Requery
+    MisureIniziali
+    Me!TabCtl_01.Value = 0
+    AggiornaPagina 0
 End Sub
 
-Private Sub MostraPagina(ByVal nPagina As Integer)
-    '#02# pagina attiva, pulsante in grassetto, fuoco sul primo controllo della pagina
+Private Sub Form_Resize()
+    '#05# la finestra e' cambiata (apertura, ingrandimento, ridimensionamento)
+    AdattaLayout
+End Sub
+
+Private Sub TabCtl_01_Change()
+    '#02# cambio pagina
+    AggiornaPagina Me!TabCtl_01.Value
+End Sub
+
+Private Sub AggiornaPagina(ByVal nPagina As Integer)
+    '#03# aggiorna le sottomaschere della pagina selezionata (nPagina parte da 0 = Pg_01)
+    Dim ctl As Control
     On Error Resume Next
-    Me!TabCtl_01.Value = nPagina
-    Me!Cmd_Pg01.FontBold = (nPagina = 0)
-    Me!Cmd_Pg02.FontBold = (nPagina = 1)
-    If nPagina = 0 Then Me!SottoForm_LINK.SetFocus Else Me!SottoForm_IMPORTA.SetFocus
+    Select Case nPagina
+        Case 0      ' Pg_01 - COLLEGAMENTI: catena delle 3 sottomaschere
+            Me!SottoForm_LINK.Requery
+            Me!TXT_NAME.Requery
+            Me!SottoForm_OGGETTI.Requery
+            Me!TXT_ID_OBJ.Requery
+            Me!SottoForm_PATH_DB.Requery
+            Me!SottoForm_LINK.SetFocus
+        Case 1      ' Pg_02 - IMPORTA OGGETTI
+            Me!SottoForm_IMPORTA.Requery
+            Me!SottoForm_IMPORTA.SetFocus
+        Case Else   ' Pg_03..Pg_12 - ogni sottomaschera presente nella pagina
+            For Each ctl In Me!TabCtl_01.Pages(nPagina).Controls
+                If ctl.ControlType = acSubform Then ctl.Requery
+            Next ctl
+    End Select
 End Sub
 
-Private Sub Cmd_Pg01_Click()
-    '#03# linguetta 1 - COLLEGAMENTI
-    MostraPagina 0
+Private Sub Cmd_HELP_Click()
+    '#04# help HTML della linguetta attiva
+    Select Case Me!TabCtl_01.Value
+        Case 0:    HELP_Apri_pf "FORM", Me.Name, "01_COLLEGAMENTI"
+        Case 1:    HELP_Apri_pf "FORM", Me.Name, "02_IMPORTA_OGGETTI"
+        Case Else: HELP_Apri_pf "FORM", Me.Name
+    End Select
 End Sub
 
-Private Sub Cmd_Pg02_Click()
-    '#03# linguetta 2 - IMPORTA OGGETTI
-    MostraPagina 1
+Private Sub MisureIniziali()
+    '#05.01# bordi tra il tab e l'area utile delle pagine, letti dall'ultima pagina (vuota)
+    Dim t As Control, p As Page
+    On Error GoTo ERRORE
+    Set t = Me!TabCtl_01
+    Set p = t.Pages(t.Pages.Count - 1)
+    m_TabL = t.Left: m_TabT = t.Top
+    m_dxL = p.Left - t.Left
+    m_dyT = p.Top - t.Top
+    m_dxR = (t.Left + t.Width) - (p.Left + p.Width)
+    m_dyB = (t.Top + t.Height) - (p.Top + p.Height)
+    m_Pronto = True
+    Exit Sub
+ERRORE:
+    m_Pronto = False
+End Sub
+
+Private Sub AdattaLayout()
+    '#05.02# tab grande quanto la finestra (mai sotto la misura di progetto)
+    Dim t As Control, wT As Long, hT As Long, wF As Long, hS As Long
+    If Not m_Pronto Then MisureIniziali
+    If Not m_Pronto Then Exit Sub
+    On Error GoTo ERRORE
+    Set t = Me!TabCtl_01
+    wT = Me.InsideWidth - m_TabL - MARG
+    hT = Me.InsideHeight - Me.Section(acHeader).Height - m_TabT - MARG
+    If wT < TAB_W_MIN Then wT = TAB_W_MIN
+    If hT < TAB_H_MIN Then hT = TAB_H_MIN
+    If wT = t.Width And hT = t.Height Then Exit Sub
+    wF = m_TabL + wT + MARG
+    hS = m_TabT + hT + MARG
+    Me.Painting = False
+    '// 1) contenitori al massimo tra misura attuale e nuova
+    If Me.Width < wF Then Me.Width = wF
+    If Me.Section(acDetail).Height < hS Then Me.Section(acDetail).Height = hS
+    t.Move m_TabL, m_TabT, IIf(wT > t.Width, wT, t.Width), IIf(hT > t.Height, hT, t.Height)
+    '// 2) pagine e pulsante ? alla misura nuova
+    DisponiPagine m_TabL + m_dxL, m_TabT + m_dyT, wT - m_dxL - m_dxR, hT - m_dyT - m_dyB
+    Me!Cmd_HELP.Left = wF - Me!Cmd_HELP.Width - MARG
+    '// 3) tab e maschera alla misura finale
+    t.Move m_TabL, m_TabT, wT, hT
+    Me.Section(acDetail).Height = hS
+    Me.Width = wF
+    Me.Painting = True
+    Exit Sub
+ERRORE:
+    Me.Painting = True
+    Debug.Print Me.Name & " AdattaLayout - errore " & Err.Number & ": " & Err.Description
+End Sub
+
+Private Sub DisponiPagine(ByVal pL As Long, ByVal pT As Long, ByVal pW As Long, ByVal pH As Long)
+    '#05.03# disposizione dei controlli nell'area utile delle pagine (pL, pT, pW, pH)
+    Const LH As Long = 300, GAP As Long = 90
+    Dim x As Long, y As Long, iw As Long, avail As Long, hTop As Long, hBot As Long
+    Dim half As Long, y2 As Long, x2 As Long, i As Integer, n As Integer
+    Dim ctl As Control, sf As Control
+    '// Pg_01: catena delle tre sottomaschere
+    x = pL + MARG: y = pT + MARG: iw = pW - 2 * MARG
+    avail = pH - 2 * MARG - 2 * (LH + 30) - GAP
+    hTop = CLng(avail * 0.52): hBot = avail - hTop
+    half = (iw - MARG) \ 2
+    x2 = x + half + MARG
+    y2 = y + LH + 30 + hTop + GAP
+    Me!LBL_LINK.Move x, y
+    Me!SottoForm_LINK.Move x, y + LH + 30, iw, hTop
+    Me!LBL_OGGETTI.Move x, y2, half
+    Me!SottoForm_OGGETTI.Move x, y2 + LH + 30, half, hBot
+    Me!LBL_PATH_DB.Move x2, y2, iw - half - MARG
+    Me!SottoForm_PATH_DB.Move x2, y2 + LH + 30, iw - half - MARG, hBot
+    '// Pg_02..Pg_12: l'unica sottomaschera della pagina occupa tutta la pagina
+    For i = 1 To Me!TabCtl_01.Pages.Count - 1
+        n = 0
+        For Each ctl In Me!TabCtl_01.Pages(i).Controls
+            If ctl.ControlType = acSubform Then n = n + 1: Set sf = ctl
+        Next ctl
+        If n = 1 Then
+            sf.Move pL, pT, pW, pH
+            AdattaSottomaschera sf
+        End If
+    Next i
+End Sub
+
+Private Sub AdattaSottomaschera(ByVal sf As Control)
+    '#05.04# la form contenuta si adatta allo spazio, se sa farlo (procedura pubblica AdattaFinestra)
+    On Error Resume Next
+    sf.Form.AdattaFinestra
 End Sub
